@@ -1,406 +1,402 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nebius APAC Marketing Strategy — Jason Singh</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
 :root{
---purple:#6B4EFF;--purple-light:#F0EEFF;--purple-mid:#B5AAFF;--purple-dark:#3D2E99;--purple-deep:#1E1650;
---green:#00D48A;--green-light:#E6FBF2;--green-dark:#00774D;
---amber:#E89B00;--amber-light:#FFF6E0;--amber-dark:#8A5C00;
---blue:#2E7CF6;--blue-light:#EBF2FE;--blue-dark:#1A4A94;
---coral:#E8553C;--coral-light:#FDF0ED;--coral-dark:#8C3324;
---teal:#07B9CE;--teal-light:#E5F8FA;--teal-dark:#085041;
---text:#0F1219;--text-2:#3D4253;--text-3:#6B7084;--text-4:#9DA1B2;
---bg:#FFFFFF;--bg-2:#F7F7FB;--bg-alt:#F0EEFF;
---border:#E2E3EA;--border-light:#EEEFF3;
---shadow-sm:0 2px 8px rgba(107,78,255,.06);
---shadow-md:0 8px 24px rgba(107,78,255,.1);
---shadow-lg:0 16px 48px rgba(107,78,255,.14);
+--g:#00D48A;--gl:#E6FBF2;--gd:#00774D;--gt:#00D48A;
+--p:#6B4EFF;--pl:#F0EEFF;--pd:#3D2E99;
+--a:#E89B00;--al:#FFF6E0;
+--b:#2E7CF6;--bl:#EBF2FE;
+--c:#E8553C;--cl:#FDF0ED;
+--t:#07B9CE;--tl:#E5F8FA;
+--bg:#FFFFFF;--bg2:#F7F7FB;--bg3:#EEEEF3;--bg4:#E2E3EA;
+--tx:#0F1219;--tx2:#3D4253;--tx3:#6B7084;--tx4:#9DA1B2;
+--bdr:#E2E3EA;--bdr2:#EEEFF3;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',sans-serif;color:var(--tx2);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
 
 /* NAV */
-.nav-wrap{position:sticky;top:0;z-index:100;background:rgba(30,22,80,.97);backdrop-filter:blur(16px);padding:0 48px}
-.nav-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
-.nav-name{font-size:14px;font-weight:500;color:rgba(255,255,255,.7)}
-.nav-name b{color:var(--purple-mid);font-weight:600}
-.nav-links{list-style:none;display:flex;gap:4px}
-.nav-links a{font-size:12px;font-weight:600;color:rgba(255,255,255,.5);text-decoration:none;padding:8px 18px;border-radius:8px;transition:all .2s;text-transform:uppercase;letter-spacing:.06em}
-.nav-links a:hover{color:rgba(255,255,255,.9);background:rgba(255,255,255,.08)}
-.nav-links a.active{color:#fff;background:rgba(107,78,255,.4)}
+.nw{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--bdr);padding:0 48px}
+.ni{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
+.nm{font-size:14px;font-weight:500;color:var(--tx2)}
+.nm b{color:var(--g);font-weight:600}
+.nl{list-style:none;display:flex;gap:2px}
+.nl a{font-size:12px;font-weight:600;color:var(--tx4);text-decoration:none;padding:8px 18px;border-radius:8px;transition:all .2s;text-transform:uppercase;letter-spacing:.07em}
+.nl a:hover{color:var(--tx2);background:rgba(0,0,0,.05)}
+.nl a.on{color:#00774D;background:#E6FBF2}
 
 /* HERO */
-.hero-wrap{background:linear-gradient(160deg,var(--purple-deep) 0%,#2D1F7A 40%,var(--purple) 100%);padding:72px 48px 64px;position:relative;overflow:hidden}
-.hero-wrap::before{content:'';position:absolute;top:-200px;right:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(107,78,255,.2),transparent 70%)}
-.hero-wrap::after{content:'';position:absolute;bottom:-150px;left:-50px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,138,.1),transparent 70%)}
-.hero-inner{max-width:1000px;margin:0 auto;position:relative;z-index:1}
-.hero-tag{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--purple-mid);margin-bottom:18px;display:block}
-.hero-wrap h1{font-size:40px;font-weight:700;line-height:1.2;letter-spacing:-.025em;color:#fff;margin-bottom:16px;max-width:680px}
-.hero-wrap h1 em{font-style:normal;color:var(--purple-mid)}
-.hero-wrap .hero-sub{font-size:17px;color:rgba(255,255,255,.65);line-height:1.7;max-width:600px}
+.hw{background:linear-gradient(160deg,#0C0E14 0%,#1a1040 40%,#2D1F7A 100%);padding:80px 48px 72px;position:relative;overflow:hidden;border-bottom:1px solid var(--bdr)}
+.hw::before{content:'';position:absolute;top:-300px;right:-200px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,138,.08),transparent 70%)}
+.hw::after{content:'';position:absolute;bottom:-200px;left:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(107,78,255,.06),transparent 70%)}
+.hi{max-width:1080px;margin:0 auto;position:relative;z-index:1}
+.ht{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--g);margin-bottom:20px;display:block}
+.hw h1{font-size:48px;font-weight:800;line-height:1.1;letter-spacing:-.03em;color:#fff;margin-bottom:18px;max-width:750px}
+.hw h1 em{font-style:normal;color:var(--g)}
+.hw .hs{font-size:18px;color:rgba(255,255,255,.6);line-height:1.7;max-width:620px}
+
+/* HERO STATS */
+.hsr{display:flex;gap:16px;margin-top:40px;flex-wrap:wrap}
+.hss{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:20px 28px}
+.hss .v{font-family:'Space Mono',monospace;font-size:32px;font-weight:700;color:var(--g);line-height:1}
+.hss .l{font-size:12px;color:rgba(255,255,255,.85);margin-top:6px;text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.hss .ctx{font-size:12px;color:rgba(255,255,255,.5);margin-top:4px;line-height:1.4}
 
 /* MAIN */
-main{max-width:1000px;margin:0 auto;padding:0 48px}
+main{max-width:1080px;margin:0 auto;padding:0 48px}
 
 /* SECTIONS */
-.sec{padding:56px 0;border-bottom:1px solid var(--border)}
-.sec:last-child{border-bottom:none;padding-bottom:64px}
-.sh{display:flex;align-items:center;gap:12px;margin-bottom:26px}
-.sn{font-family:'Space Mono',monospace;font-size:13px;color:#fff;background:var(--purple);width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;box-shadow:var(--shadow-sm)}
-.st{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-2)}
-.sub-h{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-4);margin-bottom:16px;margin-top:32px}
+.sec{padding:64px 0;border-bottom:1px solid var(--bdr)}
+.sec:last-child{border-bottom:none}
+.sh{display:flex;align-items:center;gap:14px;margin-bottom:32px}
+.sn{font-family:'Space Mono',monospace;font-size:13px;color:var(--bg);background:var(--g);width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700}
+.st{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--tx3)}
 
 /* PROSE */
-.prose{font-size:16px;color:var(--text-2);line-height:1.8;max-width:760px;margin-bottom:24px}
-.prose strong{color:var(--text);font-weight:600}
+.pr{font-size:16px;color:var(--tx2);line-height:1.8;max-width:760px;margin-bottom:28px}
+.pr strong{color:var(--tx);font-weight:600}
+
+.sub{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--tx4);margin-bottom:18px;margin-top:40px}
 
 /* GRIDS */
-.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
-.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:24px}
-.g4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:24px}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px}
+.r3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:28px}
+.r4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px}
+.r5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:28px}
 
-/* BOXES */
-.bx{background:#fff;border:1px solid var(--border);border-radius:12px;padding:24px;transition:all .2s;box-shadow:var(--shadow-sm)}
-.bx:hover{border-color:var(--purple-mid);box-shadow:var(--shadow-md);transform:translateY(-1px)}
-.bx h4{font-size:16px;font-weight:600;margin-bottom:8px;line-height:1.3}
-.bx p{font-size:14px;color:var(--text-3);line-height:1.65}
-.bx .bx-tag{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:4px 10px;border-radius:5px;display:inline-block;margin-bottom:10px}
-.bx-purple .bx-tag{background:var(--purple-light);color:var(--purple-dark)}
-.bx-green .bx-tag{background:var(--green-light);color:var(--green-dark)}
-.bx-amber .bx-tag{background:var(--amber-light);color:var(--amber-dark)}
-.bx-blue .bx-tag{background:var(--blue-light);color:var(--blue-dark)}
-.bx-coral .bx-tag{background:var(--coral-light);color:var(--coral-dark)}
-.bx-teal .bx-tag{background:var(--teal-light);color:var(--teal-dark)}
-.bx-accent-purple{border-left:3px solid var(--purple)}
-.bx-accent-green{border-left:3px solid var(--green)}
-.bx-accent-amber{border-left:3px solid var(--amber)}
-.bx-accent-blue{border-left:3px solid var(--blue)}
-.bx-accent-coral{border-left:3px solid var(--coral)}
-.bx-accent-teal{border-left:3px solid var(--teal)}
+/* CARDS */
+.ic{background:var(--bg2);border:1px solid var(--bdr);border-radius:14px;padding:28px;transition:all .25s}
+.ic:hover{border-color:#00D48A;box-shadow:0 8px 24px rgba(0,212,138,.1)}
+.ic-icon{font-size:32px;margin-bottom:14px;display:block}
+.ic h4{font-size:17px;font-weight:700;color:var(--tx);margin-bottom:8px;line-height:1.3}
+.ic p{font-size:14px;color:var(--tx3);line-height:1.65}
+.ic-bar{height:3px;border-radius:2px;margin-bottom:20px;width:40px}
 
-/* TABLES */
-.tbl{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;margin-bottom:24px;border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm)}
-.tbl th{background:var(--purple-deep);color:rgba(255,255,255,.85);font-weight:600;text-align:left;padding:14px 18px;font-size:12px;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid rgba(255,255,255,.1)}
-.tbl td{padding:14px 18px;border-bottom:1px solid var(--border-light);vertical-align:top;line-height:1.6;color:var(--text-2);background:#fff}
-.tbl tr:last-child td{border-bottom:none}
-.tbl td strong{color:var(--text);font-weight:600}
+/* LEFT-ACCENT */
+.bx{background:var(--bg2);border:1px solid var(--bdr);border-radius:12px;padding:24px 28px;margin-bottom:14px;transition:all .2s}
+.bx:hover{border-color:#00D48A}
+.bx h4{font-size:16px;font-weight:700;color:var(--tx);margin-bottom:6px}
+.bx p{font-size:14px;color:var(--tx3);line-height:1.65}
+.bx-g{border-left:3px solid var(--g)}
+.bx-p{border-left:3px solid var(--p)}
+.bx-a{border-left:3px solid var(--a)}
+.bx-b{border-left:3px solid var(--b)}
 
-/* CALLOUT */
-.callout{background:linear-gradient(135deg,var(--purple-light),#E8E4FF);border-radius:14px;padding:26px 30px;margin-bottom:24px;border-left:4px solid var(--purple);box-shadow:var(--shadow-sm)}
-.callout h4{font-size:15px;font-weight:600;color:var(--purple-dark);margin-bottom:6px}
-.callout p{font-size:14px;color:var(--purple-dark);line-height:1.65;opacity:.85}
+/* STAT CARDS */
+.kpi{background:var(--bg2);border:1px solid var(--bdr);border-radius:14px;padding:24px;text-align:center;transition:all .25s}
+.kpi:hover{border-color:#00D48A;box-shadow:0 8px 24px rgba(0,212,138,.1)}
+.kpi .v{font-family:'Space Mono',monospace;font-size:34px;font-weight:700;line-height:1;margin-bottom:10px}
+.kpi .l{font-size:12px;color:var(--tx4);line-height:1.4}
+.kp .v{color:var(--g)}
+.kg .v{color:var(--g)}
 
-/* FLOW */
-.flow{display:flex;align-items:center;gap:0;margin-bottom:24px}
-.flow-step{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px 18px;flex:1;text-align:center;box-shadow:var(--shadow-sm)}
-.flow-step h5{font-size:13px;font-weight:600;color:var(--text-2);margin-bottom:3px}
-.flow-step p{font-size:12px;color:var(--text-3)}
-.flow-arr{font-size:18px;color:var(--purple-mid);padding:0 5px;flex-shrink:0}
+/* TAG */
+.tag{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:5px;display:inline-block;margin-bottom:12px}
+.tag-g{background:var(--gl);color:var(--g)}
+.tag-p{background:var(--pl);color:var(--p)}
+.tag-a{background:var(--al);color:var(--a)}
 
-/* GOAL BANNERS */
-.goal{border-radius:16px;padding:36px 40px;margin-bottom:16px;position:relative;overflow:hidden;box-shadow:var(--shadow-md)}
-.goal::after{content:'';position:absolute;right:-30px;top:-30px;width:200px;height:200px;border-radius:50%;opacity:.08;background:#fff}
-.goal-1{background:linear-gradient(135deg,#2D1F7A,var(--purple))}
-.goal-2{background:linear-gradient(135deg,#004D35,#00774D)}
-.goal,.goal h3,.goal p{color:#fff}
-.goal-num{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.6;margin-bottom:10px}
-.goal h3{font-size:24px;font-weight:700;margin-bottom:10px;line-height:1.3}
-.goal p{font-size:15px;line-height:1.65;opacity:.75;max-width:640px}
+/* MOTION */
+.mo{display:inline-flex;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:7px 16px;border-radius:8px;margin-bottom:20px}
+.mo-c{background:var(--g);color:var(--bg)}
+.mo-d{background:var(--a);color:var(--bg)}
 
-/* FRAMEWORK MAP */
-.fmap{display:grid;grid-template-columns:120px 1fr 1fr;gap:0;border-radius:12px;overflow:hidden;margin-bottom:24px;box-shadow:var(--shadow-sm)}
-.fmap-h{background:var(--purple-deep);color:rgba(255,255,255,.8);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;padding:12px 16px}
-.fmap-cell{padding:16px 18px;font-size:14px;color:var(--text-2);line-height:1.55;border-top:1px solid var(--border);background:#fff}
-.fmap-label{font-weight:600;color:var(--text);display:flex;align-items:center;gap:8px;font-size:14px;background:var(--bg-2)}
-.fmap-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.fmap-empty{color:var(--text-4);font-style:italic}
-
-/* KPI CARDS */
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px}
-.kpi{background:#fff;border:1px solid var(--border);border-radius:12px;padding:22px;text-align:center;box-shadow:var(--shadow-sm);transition:all .2s}
-.kpi:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
-.kpi-val{font-family:'Space Mono',monospace;font-size:30px;font-weight:700;line-height:1.1;margin-bottom:8px}
-.kpi-label{font-size:12.5px;color:var(--text-3);line-height:1.45}
-.kpi-purple .kpi-val{color:var(--purple)}
-.kpi-green .kpi-val{color:var(--green-dark)}
-
-/* MOTION LABELS */
-.motion{display:inline-flex;align-items:center;gap:6px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:7px 16px;border-radius:8px;margin-bottom:18px;box-shadow:var(--shadow-sm)}
-.motion-create{background:var(--purple);color:#fff}
-.motion-capture{background:var(--amber);color:#fff}
+/* PHASE */
+.phase{background:var(--bg2);border:1px solid var(--bdr);border-radius:12px;padding:16px 24px;margin-bottom:18px;display:flex;align-items:center;gap:14px}
+.phase-n{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--bg);background:var(--g);padding:4px 12px;border-radius:6px;letter-spacing:.06em;text-transform:uppercase}
+.phase-t{font-size:16px;font-weight:700;color:var(--tx)}
+.phase-d{font-size:13px;color:var(--tx4);margin-left:auto}
 
 /* PROGRAM CARDS */
-.programs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:24px}
-.prog{background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:all .2s;box-shadow:var(--shadow-sm)}
-.prog:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
-.prog-head{padding:20px 24px 16px;border-bottom:1px solid var(--border-light)}
-.prog-head-purple{background:linear-gradient(135deg,var(--purple-light),#E8E4FF)}
-.prog-head-green{background:linear-gradient(135deg,var(--green-light),#D4F7E8)}
-.prog-head-amber{background:linear-gradient(135deg,var(--amber-light),#FFF0CC)}
-.prog h4{font-size:16px;font-weight:600;line-height:1.3}
-.prog-body{padding:20px 24px}
-.prog-body h5{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-4);margin-bottom:10px}
-.prog-body ul{list-style:none;padding:0;margin:0 0 16px}
-.prog-body li{font-size:14px;color:var(--text-2);line-height:1.6;padding:3px 0 3px 16px;position:relative}
-.prog-body li::before{content:'';width:5px;height:5px;border-radius:50%;position:absolute;left:0;top:11px}
-.prog-purple li::before{background:var(--purple-mid)}
-.prog-green li::before{background:var(--green)}
-.prog-amber li::before{background:var(--amber)}
-.prog-body .why{font-size:13px;color:var(--text-3);line-height:1.6;padding:14px 16px;background:var(--bg-2);border-radius:10px}
-.prog-body .why strong{color:var(--text-2);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:4px}
+.progs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px}
+.pg{background:var(--bg2);border:1px solid var(--bdr);border-radius:14px;overflow:hidden;transition:all .25s}
+.pg:hover{border-color:#00D48A}
+.pg-h{padding:20px 24px 16px;border-bottom:1px solid var(--bdr)}
+.pg h4{font-size:16px;font-weight:700;color:var(--tx);line-height:1.3}
+.pg-b{padding:20px 24px}
+.pg-b ul{list-style:none;padding:0;margin:0}
+.pg-b li{font-size:14px;color:var(--tx2);line-height:1.65;padding:4px 0 4px 16px;position:relative}
+.pg-b li::before{content:'';width:4px;height:4px;border-radius:50%;position:absolute;left:0;top:13px;background:var(--g)}
+
+/* GOAL BANNERS */
+.gl{border-radius:16px;padding:40px 44px;margin-bottom:16px;position:relative;overflow:hidden}
+.gl::after{content:'';position:absolute;right:-30px;top:-30px;width:200px;height:200px;border-radius:50%;opacity:.06;background:#fff}
+.gl1{background:linear-gradient(135deg,#1a1040,var(--p))}
+.gl2{background:linear-gradient(135deg,#0a2a1a,#00774D)}
+.gl,.gl h3,.gl p{color:#fff}
+.gl-n{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.5;margin-bottom:12px}
+.gl h3{font-size:26px;font-weight:800;margin-bottom:10px;line-height:1.25;letter-spacing:-.01em}
+.gl p{font-size:15px;line-height:1.7;opacity:.7;max-width:640px}
+
+/* FRAMEWORK MAP */
+.fm{display:grid;grid-template-columns:100px 1fr 1fr;gap:0;border-radius:12px;overflow:hidden;margin-bottom:28px;border:1px solid var(--bdr)}
+.fm-h{background:var(--bg3);color:var(--tx4);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:12px 16px}
+.fm-c{padding:16px 18px;font-size:14px;color:var(--tx2);line-height:1.5;border-top:1px solid var(--bdr);background:var(--bg2)}
+.fm-l{font-weight:600;color:var(--tx);display:flex;align-items:center;gap:8px}
+.fm-d{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.fm-e{color:var(--tx4);font-style:italic}
 
 /* SEGMENTS */
-.seg{background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm);transition:all .2s}
-.seg:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
-.seg-bar{height:5px}
-.seg-bar-purple{background:linear-gradient(90deg,var(--purple-dark),var(--purple))}
-.seg-bar-green{background:linear-gradient(90deg,var(--green-dark),var(--green))}
-.seg-bar-amber{background:linear-gradient(90deg,var(--amber-dark),var(--amber))}
-.seg-body{padding:24px}
-.seg-body h4{font-size:17px;font-weight:600;margin-bottom:12px}
-.seg-body p{font-size:14px;color:var(--text-3);line-height:1.6;margin-bottom:6px}
-.seg-body strong{color:var(--text-2);font-weight:600}
+.sg{background:var(--bg2);border:1px solid var(--bdr);border-radius:14px;overflow:hidden;transition:all .25s}
+.sg:hover{border-color:#00D48A}
+.sg-bar{height:4px}
+.sg-bp{background:linear-gradient(90deg,var(--p),#8B6FFF)}
+.sg-bg{background:linear-gradient(90deg,var(--gd),var(--g))}
+.sg-ba{background:linear-gradient(90deg,var(--a),#FFB733)}
+.sg-b{padding:24px}
+.sg-b h4{font-size:18px;font-weight:700;color:var(--tx);margin-bottom:12px}
+.sg-b p{font-size:14px;color:var(--tx3);line-height:1.6;margin-bottom:6px}
+.sg-b strong{color:var(--tx2);font-weight:600}
+
+/* TABLE */
+.tb{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;margin-bottom:28px;border-radius:12px;overflow:hidden;border:1px solid var(--bdr)}
+.tb th{background:var(--bg2);color:var(--tx3);font-weight:600;text-align:left;padding:14px 18px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.tb td{padding:14px 18px;border-bottom:1px solid var(--bdr2);vertical-align:top;line-height:1.6;color:var(--tx3);background:var(--bg2)}
+.tb tr:last-child td{border-bottom:none}
+.tb td strong{color:var(--tx2);font-weight:600}
 
 /* BUDGET */
-.budget-bar{display:flex;border-radius:10px;overflow:hidden;height:44px;margin-bottom:20px;box-shadow:var(--shadow-sm)}
-.budget-bar div{display:flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600;color:#fff;letter-spacing:.02em}
-.budget-items{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
-.b-item{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px 22px;display:flex;gap:16px;align-items:start;box-shadow:var(--shadow-sm);transition:all .2s}
-.b-item:hover{box-shadow:var(--shadow-md)}
-.b-dot{width:12px;height:12px;border-radius:4px;flex-shrink:0;margin-top:4px}
-.b-info h5{font-size:15px;font-weight:600;margin-bottom:3px}
-.b-info p{font-size:13px;color:var(--text-3);line-height:1.5}
-.b-info .b-amount{font-family:'Space Mono',monospace;font-size:16px;font-weight:700;color:var(--purple);margin-top:6px}
-.b-info .b-goal{font-size:12px;color:var(--text-4);margin-top:3px}
-.budget-total{background:linear-gradient(135deg,var(--purple-deep),var(--purple));border-radius:16px;padding:32px 36px;color:#fff;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-lg)}
-.budget-total h4{font-size:18px;font-weight:600}
-.budget-total .bt-num{font-family:'Space Mono',monospace;font-size:40px;font-weight:700}
-.budget-total .bt-sub{font-size:14px;opacity:.7;margin-top:4px}
+.bb{display:flex;border-radius:10px;overflow:hidden;height:44px;margin-bottom:24px;border:1px solid var(--bdr)}
+.bb div{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:#fff}
+.bi{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px}
+.bi-i{background:var(--bg2);border:1px solid var(--bdr);border-radius:12px;padding:22px 24px;display:flex;gap:16px;align-items:start;transition:all .2s}
+.bi-i:hover{border-color:#00D48A}
+.bi-d{width:12px;height:12px;border-radius:4px;flex-shrink:0;margin-top:4px}
+.bi-h{font-size:15px;font-weight:700;color:var(--tx);margin-bottom:3px}
+.bi-p{font-size:13px;color:var(--tx4);line-height:1.5}
+.bi-a{font-family:'Space Mono',monospace;font-size:18px;font-weight:700;color:var(--g);margin-top:6px}
+.bi-g{font-size:12px;color:var(--tx4);margin-top:3px}
+.bt{background:linear-gradient(135deg,#00774D,#00D48A);border:none;border-radius:16px;padding:36px 40px;color:#fff;display:flex;justify-content:space-between;align-items:center}
+.bt h4{font-size:18px;font-weight:700}
+.bt-n{font-family:'Space Mono',monospace;font-size:48px;font-weight:700;color:var(--g)}
+.bt-s{font-size:14px;opacity:.6;margin-top:4px}
 
-/* CARDS (index) */
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:56px 0;border-bottom:1px solid var(--border)}
-.card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:40px;text-decoration:none;color:inherit;transition:all .25s;display:flex;flex-direction:column;box-shadow:var(--shadow-sm)}
-.card:hover{border-color:var(--purple-mid);transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-.card-num{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
-.card-num-1{color:var(--purple)}
-.card-num-2{color:var(--green-dark)}
-.card h3{font-size:22px;font-weight:600;margin-bottom:12px;line-height:1.3}
-.card p{font-size:15px;color:var(--text-3);line-height:1.7;flex:1}
-.card .card-link{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--purple);margin-top:22px}
-.card .card-link::after{content:'→';transition:transform .2s;font-size:18px}
-.card:hover .card-link::after{transform:translateX(5px)}
+/* CALLOUT */
+.co{background:var(--bg3);border:1px solid var(--bdr);border-left:3px solid var(--g);border-radius:12px;padding:26px 30px;margin-bottom:28px}
+.co h4{font-size:15px;font-weight:700;color:var(--g);margin-bottom:6px}
+.co p{font-size:14px;color:var(--tx3);line-height:1.65}
 
-/* ABOUT (index) */
-.about{padding:56px 0;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-.about-text{font-size:16px;color:var(--text-2);line-height:1.8}
-.about-text strong{color:var(--text);font-weight:600}
-.about-contact{display:grid;gap:14px}
-.ac-item{display:flex;gap:16px;align-items:baseline}
-.ac-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-4);width:76px;flex-shrink:0}
-.ac-val{font-size:15px;color:var(--text-2)}
-.ac-val a{color:var(--purple);text-decoration:none;font-weight:500}
-.ac-val a:hover{text-decoration:underline}
+/* FLOW */
+.fl{display:flex;align-items:center;gap:0;margin-bottom:28px}
+.fl-s{background:var(--bg2);border:1px solid var(--bdr);border-radius:10px;padding:16px;flex:1;text-align:center}
+.fl-s h5{font-size:13px;font-weight:700;color:var(--tx);margin-bottom:3px}
+.fl-s p{font-size:12px;color:var(--tx4)}
+.fl-a{font-size:18px;color:var(--g);padding:0 5px}
 
-/* NEXT PAGE */
-.next-page{display:flex;align-items:center;gap:20px;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--border);border-radius:14px;padding:24px 30px;margin:40px 0 56px;transition:all .25s;box-shadow:var(--shadow-sm)}
-.next-page:hover{border-color:var(--purple-mid);transform:translateX(6px);box-shadow:var(--shadow-md)}
-.np-arrow{font-size:28px;color:var(--purple)}
-.np-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-4)}
-.np-title{font-size:17px;font-weight:600;color:var(--text)}
+/* INDEX CARDS */
+.cds{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:64px 0;border-bottom:1px solid var(--bdr)}
+.cd{background:var(--bg2);border:1px solid var(--bdr);border-radius:16px;padding:40px;text-decoration:none;color:inherit;transition:all .3s;display:flex;flex-direction:column}
+.cd:hover{border-color:#00D48A;box-shadow:0 12px 32px rgba(0,212,138,.1);transform:translateY(-4px)}
+.cd-n{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px;color:var(--g)}
+.cd h3{font-size:24px;font-weight:700;color:var(--tx);margin-bottom:14px;line-height:1.25}
+.cd p{font-size:15px;color:var(--tx3);line-height:1.7;flex:1}
+.cd-l{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--g);margin-top:24px}
+.cd-l::after{content:'→';transition:transform .2s;font-size:18px}
+.cd:hover .cd-l::after{transform:translateX(5px)}
 
-/* BACK LINK */
-.back-link{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--text-3);font-size:14px;font-weight:500;margin-top:40px;margin-bottom:56px;transition:color .15s}
-.back-link:hover{color:var(--purple)}
+/* ABOUT */
+.ab{padding:64px 0;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.ab-t{font-size:16px;color:var(--tx2);line-height:1.8}
+.ab-t strong{color:var(--tx);font-weight:700}
+.ab-c{display:grid;gap:16px}
+.ac{display:flex;gap:16px;align-items:baseline}
+.ac-l{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--tx4);width:76px;flex-shrink:0}
+.ac-v{font-size:15px;color:var(--tx2)}
+.ac-v a{color:var(--g);text-decoration:none;font-weight:500}
 
-/* FOOTER */
-footer{background:var(--purple-deep);padding:32px 48px;text-align:center;font-size:13px;color:rgba(255,255,255,.4)}
-footer b{color:rgba(255,255,255,.6);font-weight:500}
+/* NEXT / BACK / FOOTER */
+.np{display:flex;align-items:center;gap:20px;text-decoration:none;color:inherit;background:var(--bg2);border:1px solid var(--bdr);border-radius:14px;padding:24px 30px;margin:48px 0 64px;transition:all .25s}
+.np:hover{border-color:rgba(0,212,138,.2);transform:translateX(6px)}
+.np-a{font-size:28px;color:var(--g)}
+.np-l{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--tx4)}
+.np-t{font-size:17px;font-weight:700;color:var(--tx)}
+.bk{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--tx4);font-size:14px;font-weight:500;margin-top:48px;margin-bottom:64px;transition:color .15s}
+.bk:hover{color:var(--g)}
+footer{border-top:1px solid var(--bdr);background:var(--bg2);padding:32px 48px;text-align:center;font-size:13px;color:var(--tx4)}
+footer b{color:var(--tx3);font-weight:500}
 </style>
-</head>
-<body>
-<nav class="nav-wrap"><div class="nav-inner"><div class="nav-name">Jason Singh · <b>Head of Field Marketing APJ</b></div><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="framework.html">Framework</a></li><li><a href="strategy.html" class="active">Strategy</a></li></ul></div></nav>
-
-<div class="hero-wrap">
-<div class="hero-inner">
-<span class="hero-tag">◆ Nebius APAC Marketing Strategy</span>
-<h1>Two goals. Everything <em>ladders up</em> to them.</h1>
-<p class="hero-sub">This plan applies the regional marketing framework to Nebius's specific situation — a strong product entering a competitive market where brand preference, not category awareness, is the gap to close.</p>
+</head><body>
+<nav class="nw"><div class="ni"><div class="nm">Jason Singh · <b>Nebius APJ</b></div><ul class="nl"><li><a href="index.html">Home</a></li><li><a href="framework.html">Framework</a></li><li><a href="strategy.html" class="on">Strategy</a></li></ul></div></nav>
+<div class="hw"><div class="hi">
+<span class="ht">◆ Nebius APAC Marketing Strategy</span>
+<h1>The window is <em>right now.</em></h1>
+<p class="hs">Nebius is the fastest-growing company in AI infrastructure. This plan converts that momentum into market leadership across APJ before competitors can react.</p>
+<div class="hsr">
+<div class="hss"><div class="v">684%</div><div class="l">YoY Revenue Growth</div><div class="ctx">Q1 2026 vs. Q1 2025</div></div>
+<div class="hss"><div class="v">$399M</div><div class="l">Q1 2026 Revenue</div><div class="ctx">Beat estimates by 11%</div></div>
+<div class="hss"><div class="v">$3.4B</div><div class="l">Full Year 2026 Guidance</div><div class="ctx">Up from $529M in FY2025</div></div>
+<div class="hss"><div class="v">$9.3B</div><div class="l">Cash &amp; Liquidity</div><div class="ctx">Incl. $2B NVIDIA investment</div></div>
+<div class="hss"><div class="v">3.5×</div><div class="l">Pipeline Growth QoQ</div><div class="ctx">Record contract backlog</div></div>
 </div>
-</div>
+</div></div>
 
 <main>
-<!-- 01: THE TWO GOALS -->
-<div class="sec">
-<div class="sh"><div class="sn">01</div><div class="st">The two goals</div></div>
-<div class="prose">Nebius enters APJ with a $2B NVIDIA investment, a $20B+ contract backlog, and the best inference platform in the neocloud category. APJ's AI infrastructure buyers are increasingly aware of the neocloud alternative to hyperscalers — but <strong>Nebius has limited brand recognition in this region compared to CoreWeave and the established cloud providers</strong>. There's no existing regional marketing function, limited local customer evidence, and no established partner ecosystem. This plan exists to fix that.</div>
-
-<div class="goal goal-1"><div class="goal-num">Goal 1 — Demand creation</div><h3>Become the primary neocloud brand in Asia Pacific.</h3><p>APJ's AI buyers know what neoclouds are. What they don't know is why Nebius should be their first choice. Goal 1 is a pure demand creation play — building brand preference, thought leadership positioning, and ecosystem credibility so that Nebius is the name at the top of the list.</p></div>
-<div class="goal goal-2"><div class="goal-num">Goal 2 — Demand creation + demand capture</div><h3>Acquire net new logos.</h3><p>Brand preference creates the conditions; logo acquisition is the outcome. Goal 2 runs both motions in parallel — demand creation to build executive relationships, and demand capture to convert active buying intent into signed customers.</p></div>
-
-<div class="sub-h">How the goals map to the framework</div>
-<div class="fmap">
-<div class="fmap-h"></div><div class="fmap-h">Demand creation</div><div class="fmap-h">Demand capture</div>
-<div class="fmap-cell fmap-label"><span class="fmap-dot" style="background:var(--purple)"></span>Goal 1</div><div class="fmap-cell">Thought leadership, analyst partnerships, event sponsorship, industry/government, developer community</div><div class="fmap-cell fmap-empty">—</div>
-<div class="fmap-cell fmap-label"><span class="fmap-dot" style="background:var(--green)"></span>Goal 2</div><div class="fmap-cell">F1 and tier-1 hospitality, booths at industry and partner events</div><div class="fmap-cell">Outbound ABM campaigns, partner co-sell</div>
-</div>
-
-<div class="callout"><h4>The flywheel</h4><p>Brand preference makes sales conversations easier and shortens deal cycles. New logos create customer proof that accelerates brand credibility. Brand-heavy in months 1-6, shifting toward logo acquisition as awareness compounds.</p></div>
-</div>
-
-<!-- 02: OPERATING PRINCIPLES -->
-<div class="sec">
-<div class="sh"><div class="sn">02</div><div class="st">How we'll operate</div></div>
-<div class="bx bx-accent-purple"><h4>NVIDIA is the brand shortcut.</h4><p>$2B investment + Reference Platform status = the most powerful credibility signal in APJ. Lead with the NVIDIA relationship in every market entry motion. A trust accelerant that compresses the timeline from unknown entrant to credible contender.</p></div>
-<div class="bx bx-accent-green"><h4>Sales-embedded from day one.</h4><p>Join every pipeline call. Co-design account campaigns with AEs. Build programs that sales actively pulls into deals. In a new region with a small team, every program must serve a live deal or a named target account.</p></div>
-<div class="bx bx-accent-amber"><h4>Sequence markets, don't spread thin.</h4><p>Singapore first — home base, dense AI startups, fastest path to logos. Japan second — largest IT market, requires in-language investment. Korea and India expand as commercial hires come online.</p></div>
-<div class="bx bx-accent-blue"><h4>Take global playbooks and make them real. Build what central can't.</h4><p>Adapt central positioning for local competitive landscapes and language. Build from scratch where central will never go: sovereign AI for ASEAN, Japan trust-building programs, Indian startup pricing narratives.</p></div>
-</div>
-
-<!-- 03: GOAL 1 -->
-<div class="sec">
-<div class="sh"><div class="sn">03</div><div class="st">Goal 1 — Become the primary neocloud brand in APJ</div></div>
-<div class="motion motion-create">Demand creation</div>
-<div class="prose">Nebius is entering a region where CoreWeave has a head start in mindshare and the hyperscalers have deep relationships. Goal 1 closes the brand gap through thought leadership, ecosystem credibility, and consistent visibility.</div>
-
-<div class="sub-h">Success metrics</div>
-<div class="kpis">
-<div class="kpi kpi-purple"><div class="kpi-val">Top 3</div><div class="kpi-label">Unaided brand recall among AI infra buyers (SG, JP, KR)</div></div>
-<div class="kpi kpi-purple"><div class="kpi-val">#1</div><div class="kpi-label">Share of voice among neoclouds in APJ tech media</div></div>
-<div class="kpi kpi-purple"><div class="kpi-val">4+</div><div class="kpi-label">IDC / Gartner / Forrester APJ report features</div></div>
-<div class="kpi kpi-purple"><div class="kpi-val">12+</div><div class="kpi-label">Tier-1 industry and partner event activations</div></div>
-</div>
-
-<div class="sub-h">Programs</div>
-<div class="programs">
-<div class="prog"><div class="prog-head prog-head-purple"><h4>Thought leadership, analyst partnerships & distribution</h4></div><div class="prog-body prog-purple"><h5>What we do</h5><ul>
-<li>Original content: TCO vs. hyperscaler GPU, purpose-built AI cloud, sovereign AI perspectives</li>
-<li>Analyst briefings with Gartner, IDC, Forrester APJ — co-authored research, report inclusion</li>
-<li>Bylined articles in The Ken, Tech in Asia, Nikkei, ZDNet Asia</li>
-<li>Conference speaking roster — keynotes and panels</li>
-<li>Position Nebius executives as recognized APJ AI infrastructure voices</li>
-</ul><div class="why"><strong>Why it matters</strong>Analyst validation unlocks enterprise and government procurement. Earned media positions Nebius alongside incumbents. Moves the brand from unknown to considered.</div></div></div>
-<div class="prog"><div class="prog-head prog-head-purple"><h4>Tier-1 event sponsorship — industry & partner</h4></div><div class="prog-body prog-purple"><h5>What we do</h5><ul>
-<li>Premium sponsorship at GITEX Asia, SG FinTech Festival, Japan IT Week, Cloud Expo Asia, KubeCon Asia</li>
-<li>Co-sponsor NVIDIA events: GTC APJ (booth + speaking), NVIDIA AI Summit, Inception events</li>
-<li>Keynote speaking, exhibition, hosted sessions, branded activations</li>
-<li>Quality over logo placement — owned moments that demonstrate product and vision</li>
-</ul><div class="why"><strong>Why it matters</strong>Consistent visibility where APJ's AI buyers gather. Co-presence with NVIDIA borrows credibility. Puts Nebius in the same frame as established players.</div></div></div>
-<div class="prog"><div class="prog-head prog-head-purple"><h4>Industry body & government partnerships</h4></div><div class="prog-body prog-purple"><h5>What we do</h5><ul>
-<li>Formal partnerships: AISG (Singapore), JDLA (Japan), nasscom (India), KAIA (Korea)</li>
-<li>Engage government AI initiatives: Smart Nation, Japan National AI Strategy, IndiaAI Mission, K-Moonshot</li>
-<li>Sovereign AI working groups and policy roundtables</li>
-<li>Position as European-HQ, non-hyperscaler partner for AI infrastructure independence</li>
-</ul><div class="why"><strong>Why it matters</strong>Access to member networks and credibility by association. Seeds long-cycle, high-value public sector pipeline. Sovereign AI narrative differentiates from hyperscalers and US-only neoclouds.</div></div></div>
-<div class="prog"><div class="prog-head prog-head-purple"><h4>Developer community partnerships</h4></div><div class="prog-body prog-purple"><h5>What we do</h5><ul>
-<li>Partner with existing communities: Hugging Face, ML Tokyo, DataScience SG, AI Saturdays India, university labs</li>
-<li>Co-host Token Factory workshops and hackathons</li>
-<li>Recruit 10 regional developer ambassadors</li>
-<li>Technical content (blogs, tutorials, benchmarks) in EN, JP, KR</li>
-<li>Developer credits through NVIDIA Inception and regional accelerators</li>
-</ul><div class="why"><strong>Why it matters</strong>Developers drive infrastructure vendor selection. Existing communities = built-in audiences, faster credibility. Ambassadors become organic brand advocates inside their orgs.</div></div></div>
-</div>
-</div>
-
-<!-- 04: GOAL 2 -->
-<div class="sec">
-<div class="sh"><div class="sn">04</div><div class="st">Goal 2 — Acquire net new logos</div></div>
-<div class="prose">Brand preference creates the conditions; logo acquisition is the outcome. <strong>Goal 2 runs both marketing motions in parallel.</strong> We measure this in logos signed, not leads generated.</div>
-
-<div class="sub-h">Success metrics</div>
-<div class="kpis" style="grid-template-columns:repeat(5,1fr)">
-<div class="kpi kpi-green"><div class="kpi-val">$50M+</div><div class="kpi-label">Marketing-influenced pipeline (18 months)</div></div>
-<div class="kpi kpi-green"><div class="kpi-val">30+</div><div class="kpi-label">Net new signed logos</div></div>
-<div class="kpi kpi-green"><div class="kpi-val">$15M</div><div class="kpi-label">Partner-sourced pipeline</div></div>
-<div class="kpi kpi-green"><div class="kpi-val">60%</div><div class="kpi-label">Tier 1 account engagement rate</div></div>
-<div class="kpi kpi-green"><div class="kpi-val">8+</div><div class="kpi-label">APJ case studies in 12 months</div></div>
-</div>
-
-<div style="margin-top:32px"><div class="motion motion-create">Demand creation</div>
-<div class="prose" style="font-size:14px">Programs that build executive relationships and create pipeline through high-touch engagement with senior decision-makers.</div>
-<div class="programs">
-<div class="prog"><div class="prog-head prog-head-green"><h4>Tier-1 hospitality & sporting events</h4></div><div class="prog-body prog-green"><h5>What we do</h5><ul>
-<li>F1 hospitality: Singapore GP, Japanese GP, Australian GP</li>
-<li>Private suites, executive dinners, networking with Nebius leadership and customers</li>
-<li>CTO/CIO-level prospects from Tier 1 target accounts</li>
-<li>Extend to golf days, cultural experiences, exclusive events per market</li>
-<li>Multi-touch arc: pre-event outreach → event → post-event follow-up</li>
-</ul><div class="why"><strong>Why it matters</strong>Relationship depth no webinar or booth can match. Turns cold accounts into warm pipeline. Highest conversion rate and deal value of any program.</div></div></div>
-<div class="prog"><div class="prog-head prog-head-green"><h4>Booths at industry & partner events</h4></div><div class="prog-body prog-green"><h5>What we do</h5><ul>
-<li>Exhibition at GITEX Asia, Japan IT Week, Cloud Expo Asia, SG FinTech Festival</li>
-<li>NVIDIA partner events: GTC APJ, AI Summit</li>
-<li>Live Token Factory demos, AI Cloud walkthroughs, TCO calculators</li>
-<li>On-booth meeting program: pre-scheduled 1:1s for target accounts</li>
-<li>Salesforce lead capture, 48-hour follow-up SLA</li>
-<li>Post-event breakout sessions and dinners</li>
-</ul><div class="why"><strong>Why it matters</strong>Demand creation at scale — hundreds of interactions per event. Live demos are the most effective conversion mechanism. On-booth meetings + hospitality convert traffic to pipeline.</div></div></div>
+<!-- 01 -->
+<div class="sec"><div class="sh"><div class="sn">01</div><div class="st">Two goals</div></div>
+<div class="gl gl1"><div class="gl-n">Goal 1 — Demand creation</div><h3>Become the primary neocloud brand in Asia Pacific.</h3><p>Build localized positioning and a content arsenal. Then distribute aggressively: every event, every podcast, every target executive. Cement the position this year.</p></div>
+<div class="gl gl2"><div class="gl-n">Goal 2 — Demand creation + demand capture</div><h3>Acquire net new logos.</h3><p>Use the earnings story to open doors. Build executive relationships through premium hospitality. Convert intent through ABM and partner co-sell.</p></div>
+<div class="sub">Goal → Motion mapping</div>
+<div class="fm">
+<div class="fm-h"></div><div class="fm-h">Demand creation</div><div class="fm-h">Demand capture</div>
+<div class="fm-c fm-l"><span class="fm-d" style="background:var(--g)"></span>Goal 1</div><div class="fm-c">Positioning → content arsenal → events, podcasts, exec outreach, analysts</div><div class="fm-c fm-e">—</div>
+<div class="fm-c fm-l"><span class="fm-d" style="background:var(--p)"></span>Goal 2</div><div class="fm-c">F1 hospitality, event booths</div><div class="fm-c">Outbound ABM, partner co-sell</div>
 </div></div>
 
-<div style="margin-top:32px"><div class="motion motion-capture">Demand capture</div>
-<div class="prose" style="font-size:14px">Programs that convert existing buying intent into pipeline and closed deals through targeted, use-case-specific outreach.</div>
-<div class="programs">
-<div class="prog"><div class="prog-head prog-head-amber"><h4>Outbound ABM campaigns</h4></div><div class="prog-body prog-amber"><h5>What we do</h5><ul>
-<li>30 Tier 1 accounts (1:1 campaigns), 150 Tier 2 (cluster by vertical)</li>
-<li>Campaigns by use case: inference cost for fintech, open-source models for media, sovereign AI for government</li>
-<li>Jointly activated with sales through in-office mini events, dinners, hospitality (8-12 attendees)</li>
-<li>Weekly account reviews with AEs</li>
-<li>Multi-stakeholder engagement across buying committee</li>
+<!-- 02 -->
+<div class="sec"><div class="sh"><div class="sn">02</div><div class="st">Operating principles</div></div>
+<div class="r2">
+<div class="ic"><div class="ic-bar" style="background:var(--g)"></div><h4>Ride the momentum. Move now.</h4><p>684% growth. ATH stock. Every conversation started this year carries weight that won't exist once the market normalizes. Speed is the strategy.</p></div>
+<div class="ic"><div class="ic-bar" style="background:var(--p)"></div><h4>Content arsenal first, then distribute.</h4><p>Localized positioning, segment messaging, whitepapers, talk tracks, decks — built for APJ. Then push through every channel simultaneously.</p></div>
+<div class="ic"><div class="ic-bar" style="background:var(--a)"></div><h4>NVIDIA is the force multiplier.</h4><p>$2B investment + Reference Platform. Co-present at every event, co-author content, co-sell into their base. Primary credibility channel.</p></div>
+<div class="ic"><div class="ic-bar" style="background:var(--b)"></div><h4>Sales-embedded, not adjacent.</h4><p>Every pipeline call. Co-designed campaigns. Marketing puts sales in the room and arms them with content that closes.</p></div>
+</div></div>
+
+<!-- 03 -->
+<div class="sec"><div class="sh"><div class="sn">03</div><div class="st">Goal 1 — Primary neocloud brand</div></div>
+<div class="mo mo-c">Demand creation</div>
+<div class="sub">Success metrics</div>
+<div class="r4">
+<div class="kpi kp"><div class="v">Top 3</div><div class="l">Brand recall (SG, JP, KR)</div></div>
+<div class="kpi kp"><div class="v">#1</div><div class="l">Neocloud share of voice</div></div>
+<div class="kpi kp"><div class="v">50+</div><div class="l">Events & podcasts</div></div>
+<div class="kpi kp"><div class="v">100+</div><div class="l">Exec conversations</div></div>
+</div>
+
+<div class="phase"><span class="phase-n">Phase 1</span><span class="phase-t">Positioning & messaging</span></div>
+<div class="progs">
+<div class="pg"><div class="pg-h"><h4>Localized positioning by ICP</h4></div><div class="pg-b"><ul>
+<li>APJ value prop per segment: AI-native, enterprise, public sector</li>
+<li>Vertical messaging: fintech, media, healthcare, government</li>
+<li>Competitive positioning vs. hyperscalers + local clouds</li>
+<li>Sovereign AI: European-HQ, non-hyperscaler alternative</li>
+<li>Market-specific: JP (trust), KR (tech), IN (cost/scale), SG (innovation)</li>
+</ul></div></div>
+<div class="pg"><div class="pg-h"><h4>Earnings momentum narrative</h4></div><div class="pg-b"><ul>
+<li>"Why Nebius, why now" — 684%, $3.4B guidance, 45% margins, $9.3B cash</li>
+<li>Momentum proof deck: pipeline 3.5× QoQ, Meta $12B, NVIDIA $2B</li>
+<li>"The neocloud that's actually scaling" — vs. competitors on trajectory</li>
+<li>Investor-grade credibility for procurement vendor research</li>
+</ul></div></div>
+</div>
+
+<div class="phase"><span class="phase-n">Phase 2</span><span class="phase-t">Content arsenal</span></div>
+<div class="progs">
+<div class="pg"><div class="pg-h"><h4>Case studies & customer evidence</h4></div><div class="pg-b"><ul>
+<li>8+ APJ case studies in 12 months — SG first, then JP/KR</li>
+<li>Vertical proof points: fintech cost, media deployment, sovereign AI</li>
+<li>Video testimonials for events and social</li>
+<li>Reference customer program — logos for panels and calls</li>
+</ul></div></div>
+<div class="pg"><div class="pg-h"><h4>Whitepapers, talk tracks & decks</h4></div><div class="pg-b"><ul>
+<li>Flagship: "The neocloud advantage for APJ" — TCO, architecture, sovereignty</li>
+<li>Vertical papers: ASEAN fintech, JP media, IN startups</li>
+<li>Talk track library: 5-min / 20-min / 45-min per segment</li>
+<li>Event decks, podcast prep, booth scripts — EN, JP, KR</li>
+</ul></div></div>
+</div>
+
+<div class="phase"><span class="phase-n">Phase 3</span><span class="phase-t">Aggressive distribution</span></div>
+<div class="progs">
+<div class="pg"><div class="pg-h"><h4>Every event. Every podcast. Every stage.</h4></div><div class="pg-b"><ul>
+<li>Tier-1 sponsorship: GITEX Asia, SG FinTech Fest, Japan IT Week, Cloud Expo, KubeCon</li>
+<li>NVIDIA: GTC APJ, AI Summit, Inception events</li>
+<li>Podcast tour: Tech in Asia, The Ken, JP/IN/AI shows</li>
+<li>Conference speaking: every CFP, 5+ speaker roster</li>
+<li>Developer meetups: monthly SG → Tokyo, Bangalore, Seoul</li>
+<li>Industry bodies: AISG, JDLA, nasscom, KAIA</li>
+</ul></div></div>
+<div class="pg"><div class="pg-h"><h4>Executive outreach to target industries</h4></div><div class="pg-b"><ul>
+<li>Target 100+ CTOs/CIOs: fintech, media, healthcare, govt, AI startups</li>
+<li>Personalized outreach: earnings story + segment positioning</li>
+<li>CTO roundtables (8-12), private briefings, analyst-hosted events</li>
+<li>Gartner/IDC/Forrester APJ co-hosted roundtables</li>
+<li>All conversations tracked in Salesforce as pipeline inputs</li>
+</ul></div></div>
+</div></div>
+
+<!-- 04 -->
+<div class="sec"><div class="sh"><div class="sn">04</div><div class="st">Goal 2 — Net new logos</div></div>
+<div class="sub">Success metrics</div>
+<div class="r5">
+<div class="kpi kg"><div class="v">$50M+</div><div class="l">Pipeline (18mo)</div></div>
+<div class="kpi kg"><div class="v">30+</div><div class="l">Net new logos</div></div>
+<div class="kpi kg"><div class="v">$15M</div><div class="l">Partner pipeline</div></div>
+<div class="kpi kg"><div class="v">60%</div><div class="l">T1 engagement</div></div>
+<div class="kpi kg"><div class="v">8+</div><div class="l">APJ case studies</div></div>
+</div>
+
+<div style="margin-top:28px"><div class="mo mo-c">Demand creation</div>
+<div class="progs">
+<div class="pg"><div class="pg-h"><h4>Tier-1 hospitality & sporting</h4></div><div class="pg-b"><ul>
+<li>F1: Singapore GP, Japanese GP, Australian GP</li>
+<li>Private suites, exec dinners, Nebius leadership networking</li>
+<li>CTO/CIO-level from Tier 1 accounts</li>
+<li>Golf days, cultural experiences, exclusive access per market</li>
+<li>Pre-event → event → post-event follow-up arc</li>
+</ul></div></div>
+<div class="pg"><div class="pg-h"><h4>Booths at industry & partner events</h4></div><div class="pg-b"><ul>
+<li>Exhibition at every tier-1 event — comprehensive, not selective</li>
+<li>NVIDIA events: premium co-branded presence</li>
+<li>Live Token Factory demos, TCO calculators</li>
+<li>On-booth 1:1 meetings for target accounts</li>
+<li>48-hour follow-up SLA, post-event dinners</li>
+</ul></div></div>
+</div></div>
+
+<div style="margin-top:28px"><div class="mo mo-d">Demand capture</div>
+<div class="progs">
+<div class="pg"><div class="pg-h"><h4>Outbound ABM campaigns</h4></div><div class="pg-b"><ul>
+<li>30 Tier 1 (1:1), 150 Tier 2 (cluster by vertical)</li>
+<li>By use case: inference cost / fintech, open-source / media, sovereign / govt</li>
+<li>Joint activation: in-office events, exec dinners, hospitality</li>
+<li>Weekly AE reviews, multi-stakeholder mapping</li>
 <li>Salesforce pipeline tracking and attribution</li>
-</ul><div class="why"><strong>Why it matters</strong>Highest-conversion pipeline motion. Use case specificity = higher lead quality. In-person activations convert digital engagement to relationships. Joint activation ensures every touch serves a live deal.</div></div></div>
-<div class="prog"><div class="prog-head prog-head-amber"><h4>Partner co-sell</h4></div><div class="prog-body prog-amber"><h5>What we do</h5><ul>
-<li>NVIDIA co-sell: joint pipeline reviews, shared account targeting, co-funded demand gen</li>
-<li>SI activation: 3-5 partners (Accenture, NTT Data, Infosys, TCS, Samsung SDS)</li>
-<li>Partner playbooks, joint solution architectures, MDF allocation</li>
-<li>Quarterly partner business reviews</li>
-<li>ISV alliances (DataRobot, Hugging Face, Anyscale): joint webinars, mutual co-sell</li>
-</ul><div class="why"><strong>Why it matters</strong>Partners bring existing customer trust and relationships. NVIDIA referral = evaluation half done. SI recommendation outweighs direct marketing. $1 spend unlocks $2-3 in partner co-investment.</div></div></div>
+</ul></div></div>
+<div class="pg"><div class="pg-h"><h4>Partner co-sell</h4></div><div class="pg-b"><ul>
+<li>NVIDIA: joint pipeline reviews, shared targeting, co-funded demand gen</li>
+<li>SIs: Accenture, NTT Data, Infosys, TCS, Samsung SDS</li>
+<li>Partner playbooks, joint architectures, MDF</li>
+<li>ISVs: DataRobot, Hugging Face, Anyscale</li>
+<li>$1 spend → $2-3 partner co-investment</li>
+</ul></div></div>
+</div></div></div>
+
+<!-- 05 -->
+<div class="sec"><div class="sh"><div class="sn">05</div><div class="st">Target segments</div></div>
+<div class="r3">
+<div class="sg"><div class="sg-bar sg-bp"></div><div class="sg-b"><h4>AI-native startups</h4><p><strong>Entry:</strong> Token Factory</p><p><strong>Buyer:</strong> Technical founders, CTOs</p><p><strong>Trigger:</strong> Inference cost wall, open-source self-hosting</p><p><strong>→</strong> Fast logos (G2) + advocates (G1)</p></div></div>
+<div class="sg"><div class="sg-bar sg-bg"></div><div class="sg-b"><h4>Digital enterprises</h4><p><strong>Entry:</strong> AI Cloud → Token Factory</p><p><strong>Buyer:</strong> VP Eng, CTO, Head of AI</p><p><strong>Trigger:</strong> Cloud repatriation, sovereign mandates</p><p><strong>→</strong> High-value logos (G2) + credibility (G1)</p></div></div>
+<div class="sg"><div class="sg-bar sg-ba"></div><div class="sg-b"><h4>Public sector</h4><p><strong>Entry:</strong> AI Cloud (dedicated)</p><p><strong>Buyer:</strong> CIO, Digital Transformation Lead</p><p><strong>Trigger:</strong> National AI funding, data residency</p><p><strong>→</strong> Defensible logos (G2) + positioning (G1)</p></div></div>
 </div></div>
+
+<!-- 06 -->
+<div class="sec"><div class="sh"><div class="sn">06</div><div class="st">Investment</div></div>
+<div class="sub">Year 1 allocation</div>
+<div class="bb">
+<div style="width:11.4%;background:#00774D">$500K</div>
+<div style="width:11.4%;background:#009960">$500K</div>
+<div style="width:18.2%;background:#00D48A">$800K</div>
+<div style="width:9.1%;background:var(--p)">$400K</div>
+<div style="width:13.6%;background:var(--pd)">$600K</div>
+<div style="width:18.2%;background:var(--a)">$800K</div>
+<div style="width:18.2%;background:#CC8800">$800K</div>
+</div>
+<div class="bi">
+<div class="bi-i"><div class="bi-d" style="background:#00774D"></div><div><div class="bi-h">Positioning & content arsenal</div><div class="bi-p">Localized messaging, whitepapers, talk tracks, decks, podcast prep</div><div class="bi-a">$500,000</div><div class="bi-g">Goal 1 — Phase 1 + 2</div></div></div>
+<div class="bi-i"><div class="bi-d" style="background:#009960"></div><div><div class="bi-h">Case studies & evidence</div><div class="bi-p">8+ APJ case studies, video testimonials, reference program</div><div class="bi-a">$500,000</div><div class="bi-g">Goal 1 — Phase 2</div></div></div>
+<div class="bi-i"><div class="bi-d" style="background:var(--g)"></div><div><div class="bi-h">Events, podcasts & speaking</div><div class="bi-p">Tier-1 sponsorships, NVIDIA co-events, podcast tour, developer meetups</div><div class="bi-a">$800,000</div><div class="bi-g">Goal 1 + 2 — Phase 3</div></div></div>
+<div class="bi-i"><div class="bi-d" style="background:var(--p)"></div><div><div class="bi-h">Exec outreach & analysts</div><div class="bi-p">Target exec program, analyst briefings, CTO roundtables</div><div class="bi-a">$400,000</div><div class="bi-g">Goal 1 — Phase 3</div></div></div>
+<div class="bi-i"><div class="bi-d" style="background:var(--pd)"></div><div><div class="bi-h">Tier-1 hospitality & sporting</div><div class="bi-p">F1 (SG, JP, AU), executive dinners, premium experiences</div><div class="bi-a">$600,000</div><div class="bi-g">Goal 2 — demand creation</div></div></div>
+<div class="bi-i"><div class="bi-d" style="background:var(--a)"></div><div><div class="bi-h">Outbound ABM campaigns</div><div class="bi-p">Tier 1/2 campaigns, in-office events, dinners, digital activation</div><div class="bi-a">$800,000</div><div class="bi-g">Goal 2 — demand capture</div></div></div>
+<div class="bi-i" style="grid-column:1/-1"><div class="bi-d" style="background:#CC8800"></div><div><div class="bi-h">Partner co-sell & ecosystem</div><div class="bi-p">NVIDIA co-sell, SI enablement, ISV co-marketing, MDF, partner playbooks</div><div class="bi-a">$800,000</div><div class="bi-g">Goal 2 — demand capture</div></div></div>
+</div>
+<div class="bt"><div><h4>Total Year 1</h4><div class="bt-s">$50M+ pipeline · 30+ logos · #1 neocloud in APJ</div></div><div class="bt-n">$4.4M</div></div>
+<div class="co" style="margin-top:28px"><h4>Why $4.4M</h4><p>684% growth, $9.3B cash, $20-25B CapEx plan. Nebius can invest aggressively while momentum is at peak. Every month delayed, competitors close the gap.</p></div>
 </div>
 
-<!-- 05: SEGMENTS -->
-<div class="sec">
-<div class="sh"><div class="sn">05</div><div class="st">Who we're targeting</div></div>
-<div class="prose">Three buyer segments. <strong>AI-native startups are the fastest logos. Digital enterprises are the biggest. Public sector is the longest play but most defensible.</strong></div>
-<div class="g3">
-<div class="seg"><div class="seg-bar seg-bar-purple"></div><div class="seg-body"><h4>AI-native startups</h4><p><strong>Entry:</strong> Token Factory</p><p><strong>Buyer:</strong> Technical founders, CTOs. Short cycles.</p><p><strong>Trigger:</strong> Inference cost wall, self-hosting open-source models, scaling past API limits.</p><p><strong>Serves:</strong> Fast logos (Goal 2) + community advocates (Goal 1)</p></div></div>
-<div class="seg"><div class="seg-bar seg-bar-green"></div><div class="seg-body"><h4>Digital enterprises</h4><p><strong>Entry:</strong> AI Cloud then Token Factory</p><p><strong>Buyer:</strong> VP Eng, CTO, Head of AI/ML. Procurement involved.</p><p><strong>Trigger:</strong> Cloud repatriation (cost), sovereign AI mandates, open-source model shift.</p><p><strong>Serves:</strong> High-value logos (Goal 2) + brand credibility (Goal 1)</p></div></div>
-<div class="seg"><div class="seg-bar seg-bar-amber"></div><div class="seg-body"><h4>Public sector & sovereign AI</h4><p><strong>Entry:</strong> AI Cloud (dedicated)</p><p><strong>Buyer:</strong> CIO, Digital Transformation Lead. SI-led.</p><p><strong>Trigger:</strong> National AI funding, data residency regulations, sovereign compute mandates.</p><p><strong>Serves:</strong> Category-defining logos (Goal 2) + strategic positioning (Goal 1)</p></div></div>
-</div>
-</div>
-
-<!-- 06: BUDGET -->
-<div class="sec">
-<div class="sh"><div class="sn">06</div><div class="st">Investment</div></div>
-<div class="sub-h">Year 1 allocation</div>
-<div class="budget-bar">
-<div style="width:14.3%;background:var(--purple)">$500K</div>
-<div style="width:22.9%;background:var(--purple-dark)">$800K</div>
-<div style="width:5.7%;background:#8B6FFF">$200K</div>
-<div style="width:8.6%;background:var(--purple-mid)">$300K</div>
-<div style="width:17.1%;background:var(--green-dark)">$600K</div>
-<div style="width:17.1%;background:var(--amber-dark)">$600K</div>
-<div style="width:14.3%;background:var(--amber)">$500K</div>
-</div>
-<div class="budget-items">
-<div class="b-item"><div class="b-dot" style="background:var(--purple)"></div><div class="b-info"><h5>Thought leadership & analysts</h5><p>Analyst briefings, co-authored research, bylined content, speaking programs</p><div class="b-amount">$500,000</div><div class="b-goal">Goal 1 — demand creation</div></div></div>
-<div class="b-item"><div class="b-dot" style="background:var(--purple-dark)"></div><div class="b-info"><h5>Tier-1 event sponsorship</h5><p>GITEX Asia, Japan IT Week, Cloud Expo Asia, GTC APJ, NVIDIA AI Summit</p><div class="b-amount">$800,000</div><div class="b-goal">Goal 1 + Goal 2 — demand creation</div></div></div>
-<div class="b-item"><div class="b-dot" style="background:#8B6FFF"></div><div class="b-info"><h5>Industry & government partnerships</h5><p>AISG, JDLA, nasscom, KAIA, sovereign AI working groups</p><div class="b-amount">$200,000</div><div class="b-goal">Goal 1 — demand creation</div></div></div>
-<div class="b-item"><div class="b-dot" style="background:var(--purple-mid)"></div><div class="b-info"><h5>Developer community</h5><p>Sponsorships, hackathons, credits, ambassadors, technical content</p><div class="b-amount">$300,000</div><div class="b-goal">Goal 1 — demand creation</div></div></div>
-<div class="b-item"><div class="b-dot" style="background:var(--green-dark)"></div><div class="b-info"><h5>Tier-1 hospitality & sporting</h5><p>F1 hospitality (SG, JP, AU), executive dinners, premium experiences</p><div class="b-amount">$600,000</div><div class="b-goal">Goal 2 — demand creation</div></div></div>
-<div class="b-item"><div class="b-dot" style="background:var(--amber-dark)"></div><div class="b-info"><h5>Outbound ABM campaigns</h5><p>Tier 1/2 account campaigns, in-office events, dinners, digital activation</p><div class="b-amount">$600,000</div><div class="b-goal">Goal 2 — demand capture</div></div></div>
-<div class="b-item" style="grid-column:1/-1"><div class="b-dot" style="background:var(--amber)"></div><div class="b-info"><h5>Partner co-sell & ecosystem</h5><p>NVIDIA co-sell, SI enablement, ISV co-marketing, MDF allocation, partner playbooks</p><div class="b-amount">$500,000</div><div class="b-goal">Goal 2 — demand capture</div></div></div>
-</div>
-<div class="budget-total"><div><h4>Total Year 1 investment</h4><div class="bt-sub">$50M+ pipeline target = ~14× return · 30+ net new logos</div></div><div class="bt-num">$3.5M</div></div>
-<div class="callout" style="margin-top:24px"><h4>Budget philosophy</h4><p>Roughly 50/50 between Goal 1 (brand) and Goal 2 (logos) in Year 1 — brand investment is a prerequisite for pipeline efficiency in a new region. In Year 2, allocation shifts to 35/65 in favor of logo acquisition as awareness compounds.</p></div>
-</div>
-
-<a href="index.html" class="back-link">← Back to home</a>
+<a href="index.html" class="bk">← Back to home</a>
 </main>
-
 <footer><b>Jason Singh</b> · jasonsingh826@gmail.com · linkedin.com/in/jasonsingh1 · May 2026</footer>
-</body>
-</html>
+</body></html>
