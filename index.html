@@ -1,261 +1,1434 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jason Singh — Nebius APJ Field Marketing</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>The Window is Right Now — APJ Strategy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
-:root{
---g:#00D48A;--gl:#EAFBF3;--gd:#00774D;
---v:#6B4EFF;--vl:#F0EEFF;--vd:#3D2E99;
---a:#D4880F;--al:#FDF4E4;--ad:#7A4E09;
---b:#2E7CF6;--bl:#ECF2FE;
---c:#E05A3E;--cl:#FDF0ED;
---t:#0AA5B8;--tl:#E5F7FA;
---tx:#1A1A2E;--tx2:#4A4A5A;--tx3:#8A8A9A;--tx4:#B8B8C4;
---bg:#FFFFFF;--bg2:#FAFAFC;--bg3:#F2F2F6;
---bdr:#EBEBF0;--bdr2:#F5F5F8;
---r:16px;--r2:12px;--r3:8px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px}
-body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tx2);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased;letter-spacing:-.01em}
+  :root{
+    --bg:#f6f3eb;
+    --bg-1:#ede9dc;
+    --bg-2:#e3dfce;
+    --bg-3:#d8d3c0;
+    --line:#cdc7b4;
+    --line-soft:#ddd8c6;
+    --fg:#1a1814;
+    --fg-2:#4a473d;
+    --fg-dim:#7d7a6e;
+    --fg-quiet:#a6a292;
+    --ember: oklch(58% 0.19 45);
+    --ember-deep: oklch(46% 0.16 38);
+    --ember-rgb:185,86,40;
+    --lime: oklch(55% 0.18 110);
+    --serif:"Instrument Serif", "Times New Roman", serif;
+    --sans:"Geist", system-ui, sans-serif;
+    --mono:"Geist Mono", ui-monospace, monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--fg);font-family:var(--sans);-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}
+  body{overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--ember);color:#fff}
 
-/* NAV */
-.nw{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.88);backdrop-filter:blur(24px) saturate(1.4);border-bottom:1px solid rgba(0,0,0,.06);padding:0 56px}
-.ni{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:52px}
-.nm{font-size:14px;font-weight:500;color:var(--tx3)}
-.nm b{color:var(--gd);font-weight:600}
-.nl{list-style:none;display:flex;gap:1px}
-.nl a{font-size:12px;font-weight:600;color:var(--tx4);text-decoration:none;padding:6px 16px;border-radius:var(--r3);transition:all .2s;text-transform:uppercase;letter-spacing:.08em}
-.nl a:hover{color:var(--tx2);background:var(--bg3)}
-.nl a.on{color:var(--gd);background:var(--gl)}
+  .wrap{max-width:1440px;margin:0 auto;padding:0 56px}
+  @media (max-width:780px){ .wrap{padding:0 24px} }
 
-/* HERO */
-.hw{background:linear-gradient(165deg,#0C0E14 0%,#151830 35%,#1E1650 70%,#2D1F7A 100%);padding:88px 56px 80px;position:relative;overflow:hidden}
-.hw::before{content:'';position:absolute;width:800px;height:800px;border-radius:50%;top:-400px;right:-200px;background:radial-gradient(circle,rgba(0,212,138,.06),transparent 65%)}
-.hi{max-width:1080px;margin:0 auto;position:relative;z-index:1}
-.ht{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,212,138,.6);margin-bottom:24px;display:block}
-.hw h1{font-size:52px;font-weight:800;line-height:1.08;letter-spacing:-.035em;color:#fff;margin-bottom:20px;max-width:700px}
-.hw h1 em{font-style:normal;background:linear-gradient(135deg,#00D48A,#07B9CE);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hw .hs{font-size:18px;color:rgba(255,255,255,.5);line-height:1.7;max-width:560px;font-weight:400}
-.hsr{display:flex;gap:12px;margin-top:48px}
-.hss{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--r2);padding:20px 24px;min-width:140px}
-.hss .v{font-family:'Space Mono',monospace;font-size:28px;font-weight:700;color:var(--g);line-height:1}
-.hss .l{font-size:11px;color:rgba(255,255,255,.45);margin-top:6px;font-weight:500;letter-spacing:.02em}
-.hss .ctx{font-size:11px;color:rgba(255,255,255,.3);margin-top:4px}
+  .mono{font-family:var(--mono);font-weight:400;letter-spacing:0.02em}
+  .serif{font-family:var(--serif);font-weight:400}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-dim)}
+  .ember{color:var(--ember)}
+  .dim{color:var(--fg-dim)}
 
-/* MAIN */
-main{max-width:1080px;margin:0 auto;padding:0 56px}
+  /* ====== Top chrome ====== */
+  .topbar{
+    position:fixed;top:0;left:0;right:0;z-index:80;
+    display:flex;justify-content:space-between;align-items:center;
+    padding:18px 32px;
+    background:linear-gradient(to bottom, rgba(246,243,235,0.92), rgba(246,243,235,0));
+    pointer-events:none;
+  }
+  .topbar .brand,.topbar .nav,.topbar .meta{pointer-events:auto}
+  .topbar .brand{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-2);display:flex;align-items:center;gap:10px}
+  .topbar .brand b{color:var(--fg);font-weight:500}
+  .topbar .brand .dot{width:6px;height:6px;border-radius:50%;background:var(--ember);box-shadow:0 0 16px var(--ember)}
+  .topbar .nav{display:flex;gap:18px;font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-dim)}
+  .topbar .nav a{color:var(--fg-dim);transition:color .15s;display:flex;align-items:center;gap:6px}
+  .topbar .nav a:hover{color:var(--fg)}
+  .topbar .nav a.active{color:var(--ember)}
+  .topbar .nav a .num{font-size:9px;opacity:.7}
+  @media (max-width:900px){ .topbar .nav{display:none} }
 
-/* SECTIONS */
-.sec{padding:72px 0;border-bottom:1px solid var(--bdr)}
-.sec:last-child{border-bottom:none}
-.sh{margin-bottom:36px}
-.sn{font-family:'Space Mono',monospace;font-size:11px;color:var(--g);letter-spacing:.1em;margin-bottom:8px;display:block}
-.st{font-size:28px;font-weight:700;color:var(--tx);letter-spacing:-.025em;line-height:1.2}
-.sub{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--tx4);margin-bottom:20px;margin-top:48px}
+  .progress{position:fixed;top:0;left:0;height:2px;background:var(--ember);width:0;z-index:90;transition:width .1s linear}
 
-/* PROSE */
-.pr{font-size:17px;color:var(--tx2);line-height:1.8;max-width:680px;margin-bottom:32px;font-weight:400}
-.pr strong{color:var(--tx);font-weight:600}
+  /* "You are here" gutter rail */
+  .rail{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:70;display:flex;flex-direction:column;gap:14px;pointer-events:auto}
+  .rail a{display:flex;align-items:center;gap:10px;color:var(--fg-quiet);font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;transition:color .2s}
+  .rail a .tk{width:22px;height:1px;background:currentColor;transition:width .25s,background .2s}
+  .rail a:hover{color:var(--fg-2)}
+  .rail a.active{color:var(--ember)}
+  .rail a.active .tk{width:42px;background:var(--ember)}
+  .rail a span.lab{opacity:0;transition:opacity .2s}
+  .rail a:hover span.lab, .rail a.active span.lab{opacity:1}
+  @media (max-width:1100px){ .rail{display:none} }
 
-/* GRIDS */
-.r2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
-.r3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:24px}
-.r4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:32px}
-.r5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:32px}
+  /* ============== HERO ============== */
+  .hero{
+    min-height:100vh;position:relative;display:flex;flex-direction:column;justify-content:space-between;
+    padding:120px 0 36px;overflow:hidden;
+  }
+  .hero-grid{
+    position:absolute;inset:0;
+    background-image:
+      linear-gradient(to right, rgba(26,24,20,0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(26,24,20,0.045) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 30%, transparent 80%);
+    pointer-events:none;
+  }
+  .hero-glow{
+    position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);
+    width:1100px;height:1100px;
+    background: radial-gradient(circle, oklch(70% 0.18 55 / 0.18), transparent 60%);
+    pointer-events:none;filter:blur(20px);transition:transform .8s cubic-bezier(.2,.6,.1,1);
+  }
+  .hero-meta{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:0 56px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-dim)}
+  .hero-meta b{color:var(--fg);font-weight:500}
+  .hero-headline{position:relative;z-index:2;padding:0 56px;margin:auto 0}
+  .hero-eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:34px}
+  .hero-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--ember);box-shadow:0 0 24px var(--ember)}
+  .hero-eyebrow .label{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg-2)}
+  h1.title{font-family:var(--serif);font-weight:400;font-size:clamp(64px, 11vw, 168px);line-height:0.92;letter-spacing:-0.025em;color:var(--fg);max-width:1280px}
+  h1.title em{font-style:italic;color:var(--ember)}
+  .hero-sub{margin-top:36px;max-width:680px;font-size:21px;line-height:1.45;color:var(--fg-2);font-weight:300}
+  .hero-stats{position:relative;z-index:2;padding:0 56px;border-top:1px solid var(--line);padding-top:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .hero-stats .col{display:flex;flex-direction:column;gap:8px}
+  .hero-stats .num{font-family:var(--serif);font-size:64px;line-height:1;color:var(--fg);letter-spacing:-0.02em}
+  .hero-stats .num small{font-size:0.45em;color:var(--fg-dim);font-family:var(--mono);margin-left:6px;letter-spacing:.05em;vertical-align:6px}
+  .hero-stats .lab{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-dim)}
+  .hero-stats .desc{font-size:13px;color:var(--fg-2);line-height:1.4;max-width:230px}
+  @media (max-width:900px){
+    .hero-meta,.hero-headline,.hero-stats{padding:0 24px}
+    .hero-stats{grid-template-columns:repeat(2,1fr)}
+    .hero-stats .num{font-size:44px}
+  }
 
-/* CARDS */
-.ic{background:var(--bg);border:1px solid var(--bdr);border-radius:var(--r);padding:28px;transition:all .3s ease}
-.ic:hover{border-color:rgba(0,212,138,.25);box-shadow:0 8px 32px rgba(0,0,0,.04)}
-.ic h4{font-size:17px;font-weight:600;color:var(--tx);margin-bottom:8px;line-height:1.3;letter-spacing:-.01em}
-.ic p{font-size:14px;color:var(--tx3);line-height:1.65}
-.ic-bar{height:2px;border-radius:1px;margin-bottom:20px;width:32px}
-.tag{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:var(--r3);display:inline-block;margin-bottom:12px}
-.tag-g{background:var(--gl);color:var(--gd)}
-.tag-v{background:var(--vl);color:var(--vd)}
-.tag-a{background:var(--al);color:var(--ad)}
+  .scroll-hint{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);font-family:var(--mono);font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--fg-quiet);display:flex;align-items:center;gap:10px;z-index:2}
+  .scroll-hint .bar{width:1px;height:24px;background:var(--fg-quiet);animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
 
-/* STAT CARDS */
-.kpi{background:var(--bg);border:1px solid var(--bdr);border-radius:var(--r);padding:24px;text-align:center;transition:all .3s}
-.kpi:hover{border-color:rgba(0,212,138,.2);box-shadow:0 8px 32px rgba(0,0,0,.03)}
-.kpi .v{font-family:'Space Mono',monospace;font-size:32px;font-weight:700;line-height:1;margin-bottom:8px}
-.kpi .l{font-size:12px;color:var(--tx4);line-height:1.4}
-.kp .v{color:var(--g)}
-.kg .v{color:var(--gd)}
+  /* ============== ATLAS / Brief Contents ============== */
+  .atlas{padding:140px 0;border-top:1px solid var(--line);background:var(--bg);position:relative}
+  .atlas-top{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;margin-bottom:80px;align-items:end}
+  .atlas-top h2{font-family:var(--serif);font-weight:400;font-size:clamp(48px,6.5vw,96px);line-height:0.95;letter-spacing:-0.025em;color:var(--fg)}
+  .atlas-top h2 em{font-style:italic;color:var(--ember)}
+  .atlas-top .copy{font-size:17px;line-height:1.55;color:var(--fg-2);font-weight:300;max-width:540px}
+  .atlas-top .copy p+p{margin-top:14px}
+  @media (max-width:900px){ .atlas-top{grid-template-columns:1fr;gap:32px} }
 
-/* MOTION */
-.mo{display:inline-flex;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:var(--r3);margin-bottom:20px}
-.mo-c{background:var(--gl);color:var(--gd)}
-.mo-d{background:var(--al);color:var(--ad)}
+  .atlas-chapters{border-top:1px solid var(--line)}
+  .atlas-row{
+    display:grid;grid-template-columns:120px 1.4fr 2.2fr 110px;
+    align-items:baseline;border-bottom:1px solid var(--line);padding:32px 12px;
+    transition:background .15s, padding .25s;
+    cursor:pointer;position:relative;
+  }
+  .atlas-row:hover{background:rgba(var(--ember-rgb),0.04);padding-left:24px}
+  .atlas-row .ch{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--fg-dim)}
+  .atlas-row:hover .ch{color:var(--ember)}
+  .atlas-row .ttl{font-family:var(--serif);font-size:36px;line-height:1;color:var(--fg);letter-spacing:-0.01em}
+  .atlas-row .ttl em{font-style:italic;color:var(--ember)}
+  .atlas-row .pur{font-size:15px;line-height:1.45;color:var(--fg-2);font-weight:300;max-width:520px}
+  .atlas-row .pg{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--fg-dim);text-align:right}
+  .atlas-row .pg::before{content:"§ ";opacity:.6}
+  @media (max-width:780px){
+    .atlas-row{grid-template-columns:80px 1fr;gap:8px 14px}
+    .atlas-row .pur,.atlas-row .pg{display:none}
+    .atlas-row .ttl{font-size:24px}
+  }
 
-/* GOAL BANNERS */
-.gl{border-radius:var(--r);padding:40px 44px;margin-bottom:16px;position:relative;overflow:hidden}
-.gl::after{content:'';position:absolute;right:-20px;top:-20px;width:180px;height:180px;border-radius:50%;opacity:.05;background:#fff}
-.gl1{background:linear-gradient(135deg,#1a1040,#3D2E99)}
-.gl2{background:linear-gradient(135deg,#0a2a1a,#00774D)}
-.gl,.gl h3,.gl p{color:#fff}
-.gl-n{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;opacity:.5;margin-bottom:12px}
-.gl h3{font-size:24px;font-weight:700;margin-bottom:10px;line-height:1.25;letter-spacing:-.015em}
-.gl p{font-size:15px;line-height:1.7;opacity:.6;max-width:580px}
+  .atlas-foot{display:flex;justify-content:space-between;padding-top:28px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-dim);gap:24px;flex-wrap:wrap}
+  .atlas-foot b{color:var(--fg);font-weight:500}
 
-/* MANIFESTO */
-.manif{background:var(--tx);border-radius:20px;padding:56px 60px;margin-bottom:32px;position:relative;overflow:hidden}
-.manif::after{content:'';position:absolute;right:-60px;bottom:-60px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,138,.08),transparent 70%)}
-.manif-tag{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--g);opacity:.7;margin-bottom:16px}
-.manif h2{font-size:40px;font-weight:800;color:#fff;letter-spacing:-.03em;line-height:1.1;margin-bottom:20px}
-.manif p{font-size:16px;color:rgba(255,255,255,.45);line-height:1.8;max-width:520px;position:relative;z-index:1}
+  /* Atlas two-part layout */
+  .atlas-parts{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .atlas-part{padding:40px 48px;border-right:1px solid var(--line);display:flex;flex-direction:column}
+  .atlas-part:last-child{border-right:none}
+  .atlas-part .ap-head{margin-bottom:24px}
+  .atlas-part .ap-num{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ember);margin-bottom:12px}
+  .atlas-part .ap-title{font-family:var(--serif);font-size:48px;line-height:1;letter-spacing:-0.02em;color:var(--fg);font-weight:400;margin-bottom:12px}
+  .atlas-part .ap-title em{font-style:italic;color:var(--ember)}
+  .atlas-part .ap-blurb{font-size:14px;line-height:1.55;color:var(--fg-2);font-weight:300;max-width:420px}
+  .atlas-part .ap-list{list-style:none;display:flex;flex-direction:column;border-top:1px solid var(--line);margin-top:auto}
+  .atlas-part .ap-list li{border-bottom:1px solid var(--line)}
+  .atlas-part .ap-list li:last-child{border-bottom:none}
+  .atlas-part .ap-list a{display:grid;grid-template-columns:44px 1fr auto;gap:18px;padding:14px 4px;align-items:baseline;color:var(--fg);transition:background .15s,padding .25s}
+  .atlas-part .ap-list a:hover{background:rgba(var(--ember-rgb),0.05);padding-left:14px}
+  .atlas-part .ap-list a span{font-family:var(--mono);font-size:10px;letter-spacing:.18em;color:var(--fg-dim)}
+  .atlas-part .ap-list a:hover span{color:var(--ember)}
+  .atlas-part .ap-list a b{font-family:var(--serif);font-size:20px;font-weight:400;letter-spacing:-0.01em}
+  .atlas-part .ap-list a i{font-family:var(--mono);font-size:10px;letter-spacing:.04em;color:var(--fg-dim);font-style:normal;text-align:right;max-width:260px}
+  @media (max-width:900px){
+    .atlas-parts{grid-template-columns:1fr}
+    .atlas-part{border-right:none;border-bottom:1px solid var(--line);padding:32px 24px}
+    .atlas-part:last-child{border-bottom:none}
+  }
 
-/* BET CARDS */
-.bet{background:var(--bg);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;margin-bottom:20px;transition:all .3s}
-.bet:hover{box-shadow:0 12px 40px rgba(0,0,0,.05)}
-.bet-head{padding:24px 32px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--bdr2)}
-.bet-num{font-family:'Space Mono',monospace;font-size:36px;font-weight:700;line-height:1}
-.bn1{color:var(--g)}
-.bn2{color:var(--v)}
-.bn3{color:var(--a)}
-.bet-meta{flex:1}
-.bet-meta .bm-tag{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
-.bm1{color:var(--gd)}
-.bm2{color:var(--vd)}
-.bm3{color:var(--ad)}
-.bet-meta h3{font-size:20px;font-weight:700;color:var(--tx);letter-spacing:-.015em}
-.bet-body{padding:28px 32px}
-.bet-desc{font-size:15px;color:var(--tx2);line-height:1.75;margin-bottom:24px;max-width:640px}
-.bet-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
-.bet-grid.g3{grid-template-columns:1fr 1fr 1fr}
-.bg-card{background:var(--bg2);border-radius:var(--r2);padding:16px 18px}
-.bg-card h5{font-size:13px;font-weight:600;color:var(--tx);margin-bottom:4px}
-.bg-card p{font-size:12.5px;color:var(--tx3);line-height:1.55}
-.bet-metrics{display:flex;gap:8px;flex-wrap:wrap}
-.bm{font-family:'Space Mono',monospace;font-size:11px;padding:5px 12px;border-radius:var(--r3);background:var(--bg2);color:var(--tx3)}
+  /* ============== Chapter Divider ============== */
+  .chapter{
+    min-height:90vh;padding:120px 0;position:relative;overflow:hidden;
+    display:flex;align-items:center;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    background:var(--bg);
+  }
+  .chapter-bg{position:absolute;inset:0;pointer-events:none;opacity:.5}
+  .chapter-bg .ring{position:absolute;border-radius:50%;border:1px solid var(--line);opacity:.5}
+  .chapter-glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:900px;height:900px;background:radial-gradient(circle, oklch(70% 0.18 55 / 0.10), transparent 60%);filter:blur(40px);pointer-events:none;transition:transform .8s cubic-bezier(.2,.6,.1,1)}
+  .chapter-inner{position:relative;z-index:2;width:100%}
+  .chapter-tag{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:32px;display:flex;align-items:center;gap:14px}
+  .chapter-tag .pip{width:6px;height:6px;background:var(--ember);border-radius:50%}
+  .chapter-roman{
+    font-family:var(--serif);font-style:italic;font-weight:400;
+    font-size:clamp(180px,28vw,440px);line-height:0.78;
+    color:var(--ember);letter-spacing:-0.05em;margin:-0.05em 0 0 -0.04em;
+    position:relative;display:inline-block;
+  }
+  .chapter-title{font-family:var(--serif);font-size:clamp(40px,5vw,80px);line-height:1;letter-spacing:-0.02em;color:var(--fg);margin-top:24px;max-width:1100px}
+  .chapter-title em{font-style:italic;color:var(--ember)}
+  .chapter-thesis{margin-top:28px;font-size:18px;line-height:1.55;color:var(--fg-2);font-weight:300;max-width:620px}
+  .chapter-row{display:grid;grid-template-columns:auto 1fr;gap:80px;align-items:end}
+  .chapter-row .right{padding-bottom:60px}
+  @media (max-width:900px){ .chapter-row{grid-template-columns:1fr;gap:24px} .chapter-row .right{padding-bottom:0} }
 
-/* FLOW */
-.flow-wrap{display:flex;align-items:center;gap:0;margin-bottom:24px}
-.flow-step{flex:1;background:var(--bg2);border-radius:var(--r2);padding:18px;text-align:center}
-.flow-step h5{font-size:14px;font-weight:600;color:var(--tx);margin-bottom:3px}
-.flow-step p{font-size:12px;color:var(--tx3)}
-.flow-arr{padding:0 6px;font-size:20px;color:var(--tx4)}
+  /* ============== Section base ============== */
+  section.section{padding:140px 0;position:relative}
+  section.section.tight{padding:100px 0}
+  .section-head{display:grid;grid-template-columns:160px 1fr;gap:48px;margin-bottom:72px}
+  .section-head .idx{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-dim);padding-top:14px}
+  .section-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(40px,5.2vw,80px);line-height:1;letter-spacing:-0.02em;color:var(--fg)}
+  .section-head h2 em{font-style:italic;color:var(--ember)}
+  .section-head .lede{margin-top:18px;max-width:640px;font-size:18px;line-height:1.5;color:var(--fg-2);font-weight:300}
+  @media (max-width:780px){ .section-head{grid-template-columns:1fr;gap:18px} }
 
-/* TABLE */
-.tb{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;margin-bottom:32px;border-radius:var(--r);overflow:hidden;border:1px solid var(--bdr)}
-.tb th{background:var(--bg2);color:var(--tx3);font-weight:600;text-align:left;padding:14px 20px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
-.tb td{padding:14px 20px;border-top:1px solid var(--bdr2);line-height:1.6;color:var(--tx2)}
-.tb td strong{color:var(--tx);font-weight:600}
+  /* ============== Connect band ============== */
+  .connect{background:var(--bg-1);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:80px 0}
+  .connect-row{display:grid;grid-template-columns:1fr 60px 1fr;align-items:center}
+  .connect-cell{padding:24px 0}
+  .connect-cell .lab{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:14px}
+  .connect-cell .big{font-family:var(--serif);font-size:clamp(28px,3.2vw,46px);line-height:1.05;color:var(--fg);letter-spacing:-0.01em}
+  .connect-cell .big em{font-style:italic;color:var(--ember)}
+  .connect-link{display:flex;justify-content:center;align-items:center;height:100%}
+  @media (max-width:780px){
+    .connect-row{grid-template-columns:1fr}
+    .connect-link{padding:12px 0}.connect-link svg{transform:rotate(90deg)}
+  }
 
-/* FRAMEWORK MAP */
-.fm{display:grid;grid-template-columns:100px 1fr 1fr;gap:0;border-radius:var(--r);overflow:hidden;margin-bottom:32px;border:1px solid var(--bdr)}
-.fm-h{background:var(--tx);color:rgba(255,255,255,.6);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;padding:12px 18px}
-.fm-c{padding:16px 18px;font-size:14px;color:var(--tx2);line-height:1.5;border-top:1px solid var(--bdr)}
-.fm-l{font-weight:600;color:var(--tx);display:flex;align-items:center;gap:8px;background:var(--bg2)}
-.fm-d{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.fm-e{color:var(--tx4)}
+  /* ============== FRAMEWORK DIAGRAM ============== */
+  .framework{padding:140px 0;border-top:1px solid var(--line);background:var(--bg-1);position:relative;overflow:hidden}
+  .framework::before{
+    content:"";position:absolute;inset:0;
+    background-image:linear-gradient(to right, rgba(26,24,20,0.03) 1px, transparent 1px),linear-gradient(to bottom, rgba(26,24,20,0.03) 1px, transparent 1px);
+    background-size:60px 60px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 20%, transparent 80%);
+    pointer-events:none;
+  }
+  .framework .wrap{position:relative;z-index:2}
+  .framework-head{margin-bottom:64px}
+  .framework-head .label{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ember);margin-bottom:18px}
+  .framework-head h2{font-family:var(--serif);font-size:clamp(40px,5vw,72px);line-height:1;letter-spacing:-0.02em;color:var(--fg);font-weight:400;max-width:980px}
+  .framework-head h2 em{font-style:italic;color:var(--ember)}
+  .framework-head .lede{margin-top:20px;font-size:17px;line-height:1.55;color:var(--fg-2);font-weight:300;max-width:620px}
 
-/* WAVE CARDS */
-.wave{background:var(--bg);border:1px solid var(--bdr);border-radius:var(--r);padding:28px;transition:all .3s}
-.wave:hover{box-shadow:0 8px 32px rgba(0,0,0,.04)}
-.wave-tag{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.08em;margin-bottom:12px;display:block}
-.wave h4{font-size:18px;font-weight:700;color:var(--tx);margin-bottom:8px;letter-spacing:-.01em}
-.wave>p{font-size:14px;color:var(--tx3);line-height:1.6;margin-bottom:12px}
-.wave-product{font-size:12px;font-weight:600;margin-bottom:8px}
-.wave-brands{font-size:12px;color:var(--tx4);margin-bottom:10px;line-height:1.5}
-.wave-detail{font-size:12px;color:var(--tx3);line-height:1.6}
-.wave-detail strong{color:var(--tx2);font-weight:600}
+  .fdiagram{
+    position:relative;
+    padding:32px 0 0;
+    border-top:1px solid var(--line);
+  }
+  .fdiagram .layer-label{
+    position:absolute;left:0;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-dim);
+  }
+  .fdiagram .lines{position:absolute;inset:0;pointer-events:none;width:100%;height:100%}
 
-/* SEGMENT CARDS */
-.sg{background:var(--bg);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;transition:all .3s}
-.sg:hover{box-shadow:0 8px 32px rgba(0,0,0,.04)}
-.sg-bar{height:3px}
-.sg-bp{background:linear-gradient(90deg,var(--vd),var(--v))}
-.sg-bg{background:linear-gradient(90deg,var(--gd),var(--g))}
-.sg-ba{background:linear-gradient(90deg,var(--ad),var(--a))}
-.sg-b{padding:24px 28px}
-.sg-b h4{font-size:18px;font-weight:700;color:var(--tx);margin-bottom:12px;letter-spacing:-.01em}
-.sg-b p{font-size:14px;color:var(--tx3);line-height:1.6;margin-bottom:6px}
-.sg-b strong{color:var(--tx2);font-weight:600}
+  .frow{position:relative;display:grid;grid-template-columns:repeat(12,1fr);gap:16px;padding:32px 0}
+  .frow + .frow{border-top:1px dashed var(--line-soft)}
 
-/* BUDGET */
-.bb{display:flex;border-radius:var(--r2);overflow:hidden;height:40px;margin-bottom:24px}
-.bb div{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:#fff}
-.bi{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px}
-.bi-i{background:var(--bg);border:1px solid var(--bdr);border-radius:var(--r);padding:22px 24px;display:flex;gap:16px;align-items:start;transition:all .3s}
-.bi-i:hover{box-shadow:0 8px 32px rgba(0,0,0,.03)}
-.bi-d{width:10px;height:10px;border-radius:3px;flex-shrink:0;margin-top:5px}
-.bi-h{font-size:15px;font-weight:600;color:var(--tx);margin-bottom:3px}
-.bi-p{font-size:13px;color:var(--tx4);line-height:1.5}
-.bi-a{font-family:'Space Mono',monospace;font-size:17px;font-weight:700;color:var(--g);margin-top:8px}
-.bi-g{font-size:11px;color:var(--tx4);margin-top:3px;letter-spacing:.02em}
-.bt{background:var(--tx);border-radius:var(--r);padding:36px 40px;color:#fff;display:flex;justify-content:space-between;align-items:center}
-.bt h4{font-size:18px;font-weight:600}
-.bt-n{font-family:'Space Mono',monospace;font-size:48px;font-weight:700;color:var(--g)}
-.bt-s{font-size:14px;opacity:.4;margin-top:4px}
+  .fr-goals{padding-top:48px}
+  .fr-goals .label{position:absolute;top:18px;left:0;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-dim)}
+  .fnode{
+    border:1px solid var(--line);background:var(--bg);border-radius:2px;
+    padding:18px 18px;display:flex;flex-direction:column;gap:8px;position:relative;
+    transition:border-color .25s, background .25s, transform .25s;
+  }
+  .fnode:hover{border-color:var(--ember);background:rgba(var(--ember-rgb),0.04)}
+  .fnode .kind{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ember)}
+  .fnode .nm{font-family:var(--serif);font-size:22px;line-height:1.1;color:var(--fg);letter-spacing:-0.01em}
+  .fnode .nm em{font-style:italic;color:var(--ember)}
+  .fnode .sub{font-size:13px;line-height:1.4;color:var(--fg-2)}
 
-/* CALLOUT */
-.co{background:var(--bg2);border-radius:var(--r);padding:28px 32px;margin-bottom:28px;border-left:3px solid var(--g)}
-.co h4{font-size:15px;font-weight:600;color:var(--tx);margin-bottom:6px}
-.co p{font-size:14px;color:var(--tx3);line-height:1.65}
+  .fnode.goal{grid-column:span 6}
+  .fnode.motion{grid-column:span 6}
+  .fnode.bet{grid-column:span 4}
+  .fnode.outcome{grid-column:span 3}
+  .fnode.outcome .v{font-family:var(--serif);font-size:38px;line-height:1;color:var(--ember);letter-spacing:-0.02em}
+  .fnode.outcome .l{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-dim)}
 
-/* FLOW (framework) */
-.fl{display:flex;align-items:center;gap:0;margin-bottom:28px}
-.fl-s{background:var(--bg);border:1px solid var(--bdr);border-radius:var(--r2);padding:14px;flex:1;text-align:center}
-.fl-s h5{font-size:13px;font-weight:600;color:var(--tx);margin-bottom:2px}
-.fl-s p{font-size:11px;color:var(--tx4)}
-.fl-a{font-size:16px;color:var(--tx4);padding:0 4px}
+  .fnode.bet.b1{border-left:3px solid oklch(72% 0.17 60)}
+  .fnode.bet.b2{border-left:3px solid oklch(60% 0.19 48)}
+  .fnode.bet.b3{border-left:3px solid oklch(46% 0.16 38)}
 
-/* INDEX CARDS */
-.cds{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:72px 0;border-bottom:1px solid var(--bdr)}
-.cd{background:var(--bg);border:1px solid var(--bdr);border-radius:20px;padding:44px;text-decoration:none;color:inherit;transition:all .35s ease;display:flex;flex-direction:column}
-.cd:hover{border-color:rgba(0,212,138,.3);box-shadow:0 20px 60px rgba(0,0,0,.06);transform:translateY(-3px)}
-.cd-n{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px;color:var(--g)}
-.cd h3{font-size:24px;font-weight:700;color:var(--tx);margin-bottom:14px;line-height:1.2;letter-spacing:-.02em}
-.cd p{font-size:15px;color:var(--tx3);line-height:1.7;flex:1}
-.cd-l{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--g);margin-top:28px}
-.cd-l::after{content:'→';transition:transform .25s;font-size:18px}
-.cd:hover .cd-l::after{transform:translateX(5px)}
+  .fnode .star{position:absolute;top:10px;right:14px;font-family:var(--mono);font-size:11px;color:var(--ember)}
 
-/* ABOUT */
-.ab{padding:72px 0;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.ab-t{font-size:16px;color:var(--tx2);line-height:1.85}
-.ab-t strong{color:var(--tx);font-weight:600}
-.ab-c{display:grid;gap:16px}
-.ac{display:flex;gap:16px;align-items:baseline}
-.ac-l{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--tx4);width:76px;flex-shrink:0}
-.ac-v{font-size:15px;color:var(--tx2)}
-.ac-v a{color:var(--g);text-decoration:none;font-weight:500}
+  @media (max-width:900px){
+    .fnode.goal,.fnode.motion{grid-column:span 12}
+    .fnode.bet{grid-column:span 12}
+    .fnode.outcome{grid-column:span 6}
+  }
 
-/* EVERYTHING ELSE TABLE */
-.ee{width:100%;border-collapse:separate;border-spacing:0;font-size:13px;border-radius:var(--r);overflow:hidden;border:1px solid var(--bdr);margin-bottom:32px}
-.ee th{background:var(--bg2);color:var(--tx3);font-weight:600;text-align:left;padding:12px 20px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
-.ee td{padding:12px 20px;border-top:1px solid var(--bdr2);line-height:1.55;color:var(--tx3)}
-.ee td:first-child{color:var(--tx2);font-weight:500}
+  .ftakeaways{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;padding-top:48px;border-top:1px solid var(--line)}
+  .ftake{display:flex;gap:14px;align-items:flex-start}
+  .ftake .num{font-family:var(--serif);font-size:60px;line-height:0.8;color:var(--ember);letter-spacing:-0.03em;min-width:60px;font-style:italic}
+  .ftake .body .h{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg);margin-bottom:6px}
+  .ftake .body .d{font-size:14px;line-height:1.5;color:var(--fg-2);font-weight:300}
+  @media (max-width:780px){ .ftakeaways{grid-template-columns:1fr} }
 
-/* LINKS */
-.np{display:flex;align-items:center;gap:20px;text-decoration:none;color:inherit;background:var(--bg);border:1px solid var(--bdr);border-radius:var(--r);padding:24px 32px;margin:48px 0 72px;transition:all .3s}
-.np:hover{border-color:rgba(0,212,138,.25);transform:translateX(4px);box-shadow:0 8px 32px rgba(0,0,0,.04)}
-.np-a{font-size:28px;color:var(--g)}
-.np-l{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--tx4)}
-.np-t{font-size:17px;font-weight:600;color:var(--tx)}
-.bk{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--tx4);font-size:14px;font-weight:500;margin-top:48px;margin-bottom:72px;transition:color .2s}
-.bk:hover{color:var(--g)}
-footer{border-top:1px solid var(--bdr);padding:36px 56px;text-align:center;font-size:13px;color:var(--tx4)}
-footer b{color:var(--tx3);font-weight:500}
+  /* ============== Goals ============== */
+  .goals{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .goal{padding:56px 48px;border-right:1px solid var(--line);position:relative;min-height:380px;display:flex;flex-direction:column}
+  .goal:last-child{border-right:none}
+  .goal .gnum{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:24px}
+  .goal .gtag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ember);border:1px solid var(--ember);padding:4px 10px;border-radius:99px;margin-bottom:34px;align-self:flex-start}
+  .goal .gtag.cap{color:var(--lime);border-color:var(--lime)}
+  .goal h3{font-family:var(--serif);font-size:48px;line-height:1.04;letter-spacing:-0.02em;color:var(--fg);margin-bottom:24px;font-weight:400}
+  .goal h3 em{font-style:italic;color:var(--ember)}
+  .goal .gbody{font-size:16px;line-height:1.5;color:var(--fg-2);max-width:440px;font-weight:300;margin-top:auto}
+  @media (max-width:780px){
+    .goals{grid-template-columns:1fr}
+    .goal{border-right:none;border-bottom:1px solid var(--line);padding:40px 24px;min-height:auto}
+    .goal:last-child{border-bottom:none}
+  }
+
+  /* ============== Manifesto ============== */
+  .manifesto{background:var(--bg);padding:200px 0;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+  .manifesto .floater{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:1000px;height:1000px;background:radial-gradient(circle, oklch(70% 0.18 55 / 0.12), transparent 60%);pointer-events:none;filter:blur(40px)}
+  .manifesto .pretitle{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:40px;position:relative}
+  .manifesto blockquote{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(56px,10vw,160px);line-height:0.92;letter-spacing:-0.025em;color:var(--fg);max-width:1200px;margin:0 auto;position:relative}
+  .manifesto blockquote .ember{color:var(--ember)}
+  .manifesto .below{margin:60px auto 0;max-width:680px;font-size:17px;line-height:1.55;color:var(--fg-2);font-weight:300;position:relative}
+
+  /* ============== HORIZONTAL BETS ============== */
+  .hbets{position:relative;height:420vh;background:var(--bg)}
+  .hbets-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column}
+  .hbets-bar{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 56px;border-bottom:1px solid var(--line);
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-dim);
+    flex:0 0 auto;background:var(--bg);z-index:5;
+  }
+  .hbets-bar .left{display:flex;align-items:center;gap:14px}
+  .hbets-bar .left .pip{width:6px;height:6px;border-radius:50%;background:var(--ember)}
+  .hbets-bar .left b{color:var(--fg);font-weight:500}
+  .hbets-bar .pgr{display:flex;align-items:center;gap:12px}
+  .hbets-bar .pgr .tk{width:48px;height:1px;background:var(--line);position:relative;overflow:hidden}
+  .hbets-bar .pgr .tk i{position:absolute;left:0;top:0;height:100%;width:0;background:var(--ember);transition:width .15s linear;display:block}
+  .hbets-track-wrap{flex:1;position:relative;overflow:hidden}
+  .hbets-track{display:flex;height:100%;will-change:transform}
+  .hbets-panel{flex:0 0 100vw;height:100%;padding:60px 56px;display:flex;flex-direction:column;border-right:1px solid var(--line)}
+  .hbets-panel.intro{flex:0 0 70vw;background:var(--bg);align-items:flex-start;justify-content:center}
+  .hbets-panel.intro h2{font-family:var(--serif);font-size:clamp(48px,7vw,108px);line-height:0.95;letter-spacing:-0.025em;color:var(--fg);font-weight:400;max-width:900px}
+  .hbets-panel.intro h2 em{font-style:italic;color:var(--ember)}
+  .hbets-panel.intro p{margin-top:28px;font-size:18px;line-height:1.5;color:var(--fg-2);font-weight:300;max-width:560px}
+  .hbets-panel .panel-head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:32px;gap:20px}
+  .hbets-panel .panel-head .l{display:flex;align-items:center;gap:18px}
+  .hbets-panel .panel-head .bignum{font-family:var(--serif);font-style:italic;font-size:96px;line-height:0.85;color:var(--ember);letter-spacing:-0.04em}
+  .hbets-panel .panel-head .hd{display:flex;flex-direction:column;gap:6px}
+  .hbets-panel .panel-head .hd .kk{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-dim)}
+  .hbets-panel .panel-head .hd .nm{font-family:var(--serif);font-size:44px;line-height:1.02;letter-spacing:-0.02em;color:var(--fg)}
+  .hbets-panel .panel-head .hd .nm em{font-style:italic;color:var(--ember)}
+  .hbets-panel .panel-head .motion{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-dim);border:1px solid var(--line);padding:6px 12px;border-radius:99px;display:inline-flex;align-items:center;gap:8px;align-self:flex-start;white-space:nowrap}
+  .hbets-panel .panel-head .motion .pip{width:6px;height:6px;border-radius:50%;background:var(--ember)}
+  .hbets-panel .panel-head .motion.cap .pip{background:var(--lime)}
+
+  .hbets-panel .panel-body{display:grid;grid-template-columns:0.9fr 1.4fr;gap:60px;flex:1;min-height:0;overflow:hidden}
+  .hbets-panel .pb-l{display:flex;flex-direction:column;gap:24px}
+  .hbets-panel .pb-l .why{font-size:18px;line-height:1.5;color:var(--fg-2);font-weight:300}
+  .hbets-panel .pb-l .why .ember{color:var(--ember)}
+  .hbets-panel .pb-l .kpis{display:flex;flex-direction:column;gap:14px;margin-top:auto;padding-top:24px;border-top:1px dashed var(--line)}
+  .hbets-panel .pb-l .kpi{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+  .hbets-panel .pb-l .kpi .v{font-family:var(--serif);font-size:36px;line-height:1;color:var(--ember);letter-spacing:-0.02em}
+  .hbets-panel .pb-l .kpi .l{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-dim);text-align:right}
+
+  .hbets-panel .pb-r{display:flex;flex-direction:column;gap:14px;overflow:auto}
+  .hbets-panel .pb-r .tactic{border:1px solid var(--line);padding:18px 20px;background:var(--bg-1);border-radius:2px;display:grid;grid-template-columns:140px 1fr;gap:18px}
+  .hbets-panel .pb-r .tactic .tlab{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ember);font-weight:500}
+  .hbets-panel .pb-r .tactic ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+  .hbets-panel .pb-r .tactic li{font-size:14px;line-height:1.5;color:var(--fg-2);position:relative;padding-left:14px}
+  .hbets-panel .pb-r .tactic li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:1px;background:var(--fg-dim)}
+
+  .hbets-arc{display:flex;align-items:stretch;gap:0;border:1px solid var(--line);background:var(--bg-1);margin-bottom:14px}
+  .hbets-arc .stp{flex:1;padding:14px 14px;border-right:1px solid var(--line);position:relative;display:flex;flex-direction:column;gap:4px}
+  .hbets-arc .stp:last-child{border-right:none}
+  .hbets-arc .stp .n{font-family:var(--mono);font-size:10px;letter-spacing:.18em;color:var(--ember)}
+  .hbets-arc .stp .t{font-family:var(--serif);font-size:18px;color:var(--fg);line-height:1.1}
+  .hbets-arc .stp .d{font-size:11px;color:var(--fg-dim);line-height:1.4}
+  .hbets-arc .stp::after{content:"→";position:absolute;right:-9px;top:50%;transform:translateY(-50%);background:var(--bg-1);color:var(--ember);padding:0 2px;font-family:var(--mono);font-size:14px;z-index:2}
+  .hbets-arc .stp:last-child::after{display:none}
+
+  @media (max-width:1000px){
+    .hbets-panel .panel-body{grid-template-columns:1fr;overflow:auto}
+    .hbets-panel{padding:40px 24px}
+    .hbets-panel .panel-head .bignum{font-size:64px}
+    .hbets-panel .panel-head .hd .nm{font-size:32px}
+  }
+
+  /* ============== Program map ============== */
+  .ptable{border-top:1px solid var(--line);font-size:14px}
+  .ptable .ph{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;border-bottom:1px solid var(--line)}
+  .ptable .ph > div{padding:14px 18px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-dim)}
+  .ptable .ph > div:not(:last-child){border-right:1px solid var(--line)}
+  .ptable .pr{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;border-bottom:1px solid var(--line);transition:background .15s}
+  .ptable .pr:hover{background:var(--bg-1)}
+  .ptable .pr.big{background:rgba(var(--ember-rgb),0.04)}
+  .ptable .pr.big:hover{background:rgba(var(--ember-rgb),0.07)}
+  .ptable .pr > div{padding:18px;color:var(--fg-2);line-height:1.4;font-size:14px}
+  .ptable .pr > div:not(:last-child){border-right:1px solid var(--line)}
+  .ptable .pr .name{color:var(--fg);font-weight:500}
+  .ptable .pr.big .name::before{content:"★ ";color:var(--ember);font-size:13px}
+  .ptable .pr.section-row{background:var(--bg-1);grid-template-columns:1fr}
+  .ptable .pr.section-row > div{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-dim);border-right:none;padding:14px 18px}
+  .ptable .pr .status{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--fg-dim)}
+  .ptable .pr.big .status{color:var(--ember)}
+  @media (max-width:900px){
+    .ptable .ph, .ptable .pr{grid-template-columns:1.5fr 1fr 1fr}
+    .ptable .ph div:nth-child(3),.ptable .pr div:nth-child(3){display:none}
+  }
+
+  /* ============== Waves ============== */
+  .waves{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .wave{padding:48px 32px;border-right:1px solid var(--line);position:relative;min-height:520px;display:flex;flex-direction:column}
+  .wave:last-child{border-right:none}
+  .wave.emphasized{background:var(--bg-1)}
+  .wave .wlab{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:12px}
+  .wave.emphasized .wlab{color:var(--ember)}
+  .wave .wgrowth{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ember);border:1px solid var(--ember);padding:4px 10px;border-radius:99px;margin-bottom:20px;align-self:flex-start}
+  .wave h3{font-family:var(--serif);font-size:36px;line-height:1.04;color:var(--fg);font-weight:400;margin-bottom:8px;letter-spacing:-0.02em}
+  .wave .product{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ember);margin-bottom:20px}
+  .wave .blurb{font-size:14px;line-height:1.55;color:var(--fg-2);margin-bottom:28px;font-weight:300}
+  .wave .targets-lab{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:10px}
+  .wave .targets{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+  .wave .chip{font-family:var(--mono);font-size:11px;color:var(--fg);border:1px solid var(--line);padding:5px 9px;border-radius:99px;background:var(--bg)}
+  .wave .cycle{margin-top:auto;padding-top:18px;border-top:1px dashed var(--line);font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--fg-dim)}
+  .wave .cycle b{color:var(--fg);font-weight:500}
+  @media (max-width:900px){
+    .waves{grid-template-columns:1fr}
+    .wave{border-right:none;border-bottom:1px solid var(--line);min-height:auto}
+    .wave:last-child{border-bottom:none}
+  }
+
+  /* ============== Principles ============== */
+  .principles{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .principle{padding:48px 24px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:18px;min-height:280px}
+  .principle:last-child{border-right:none}
+  .principle .pn{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--ember)}
+  .principle h4{font-family:var(--serif);font-size:30px;line-height:1.05;color:var(--fg);font-weight:400;letter-spacing:-0.01em}
+  .principle p{font-size:14px;line-height:1.5;color:var(--fg-2);font-weight:300;margin-top:auto}
+  @media (max-width:900px){
+    .principles{grid-template-columns:1fr 1fr}
+    .principle{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .principle:nth-child(2n){border-right:none}
+    .principle:nth-last-child(-n+2){border-bottom:none}
+  }
+  @media (max-width:600px){
+    .principles{grid-template-columns:1fr}
+    .principle:nth-child(2n){border-right:none}
+  }
+
+  /* ============== Investment ============== */
+  .invest-top{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:48px}
+  .invest-top .pct{font-family:var(--serif);font-size:clamp(120px,18vw,260px);line-height:0.85;color:var(--ember);letter-spacing:-0.04em;font-weight:400}
+  .invest-top .pct sup{font-size:0.35em;color:var(--ember);vertical-align:65%;font-family:var(--mono);letter-spacing:0;font-weight:400}
+  .invest-top .pcopy{font-size:18px;line-height:1.5;color:var(--fg-2);font-weight:300;max-width:480px}
+  .invest-top .pcopy b{color:var(--fg);font-weight:500}
+  @media (max-width:900px){ .invest-top{grid-template-columns:1fr;gap:32px} }
+
+  .alloc{margin-top:48px;border-top:1px solid var(--line)}
+  .alloc-bar{display:flex;width:100%;height:78px;border:1px solid var(--line);border-top:none;overflow:hidden}
+  .alloc-bar .seg{display:flex;align-items:flex-end;padding:10px 14px;color:#fff;font-family:var(--mono);font-size:11px;letter-spacing:.05em;border-right:1px solid rgba(255,255,255,0.2);position:relative;font-weight:500}
+  .alloc-bar .seg:last-child{border-right:none}
+  .alloc-bar .seg.b1{background:oklch(72% 0.17 60);flex:1.3;color:#1a1814}
+  .alloc-bar .seg.b2{background:oklch(60% 0.19 48);flex:0.9}
+  .alloc-bar .seg.b3{background:oklch(46% 0.16 38);flex:1.6}
+  .alloc-bar .seg.sup{background:var(--bg-2);color:var(--fg-2);flex:0.6;border-left:1px solid var(--line)}
+  .alloc-bar .seg .l{display:block;font-size:10px;opacity:0.75;letter-spacing:.18em;text-transform:uppercase;margin-bottom:4px}
+  .alloc-bar .seg .v{font-family:var(--serif);font-size:20px;letter-spacing:-0.01em}
+
+  .alloc-table{border:1px solid var(--line);border-top:none}
+  .alloc-row{display:grid;grid-template-columns:60px 2.5fr 1fr 2fr;border-bottom:1px solid var(--line)}
+  .alloc-row:last-child{border-bottom:none}
+  .alloc-row > div{padding:20px 18px;border-right:1px solid var(--line);font-size:14px;color:var(--fg-2);line-height:1.45}
+  .alloc-row > div:last-child{border-right:none}
+  .alloc-row .swatch{padding:0;display:flex;align-items:center;justify-content:center}
+  .alloc-row .swatch span{display:block;width:20px;height:20px;border-radius:2px}
+  .alloc-row .name{color:var(--fg);font-family:var(--serif);font-size:22px;letter-spacing:-0.01em}
+  .alloc-row .amt{font-family:var(--mono);color:var(--fg);font-size:15px}
+  .alloc-row.total{background:var(--bg-1)}
+  .alloc-row.total .name{color:var(--ember)}
+  .alloc-row.total .amt{color:var(--ember);font-size:18px}
+  @media (max-width:780px){
+    .alloc-row{grid-template-columns:40px 1.5fr 1fr}
+    .alloc-row > div:nth-child(4){display:none}
+  }
+
+  .invest-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-top:none}
+  .invest-kpis .ik{padding:36px 28px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+  .invest-kpis .ik:last-child{border-right:none}
+  .invest-kpis .ik .iv{font-family:var(--serif);font-size:64px;line-height:1;color:var(--fg);letter-spacing:-0.02em}
+  .invest-kpis .ik .iv em{color:var(--ember);font-style:italic}
+  .invest-kpis .ik .il{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-dim)}
+  @media (max-width:780px){ .invest-kpis{grid-template-columns:1fr}.invest-kpis .ik{border-right:none;border-bottom:1px solid var(--line)} .invest-kpis .ik:last-child{border-bottom:none} }
+
+  /* ============== Footer ============== */
+  footer.foot{padding:140px 0 80px;border-top:1px solid var(--line);background:var(--bg)}
+  .foot-row{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end}
+  .foot-title{font-family:var(--serif);font-size:clamp(40px,5vw,72px);line-height:1;color:var(--fg);letter-spacing:-0.02em;font-weight:400}
+  .foot-title em{font-style:italic;color:var(--ember)}
+  .foot-meta{font-family:var(--mono);font-size:12px;color:var(--fg-dim);line-height:1.8;letter-spacing:.04em}
+  .foot-meta b{color:var(--fg);font-weight:500;letter-spacing:.04em}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:80px;padding-top:24px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-quiet)}
+  @media (max-width:780px){ .foot-row{grid-template-columns:1fr;gap:40px} .foot-bottom{flex-direction:column;gap:16px;align-items:flex-start} }
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .9s ease, transform .9s ease}
+  .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.08s}
+  .reveal.d2{transition-delay:.16s}
+  .reveal.d3{transition-delay:.24s}
+  .reveal.d4{transition-delay:.32s}
+  html.no-reveal .reveal{opacity:1 !important;transform:none !important;transition:none !important}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+  }
+
+  /* Helper: dashed lines in framework */
+  .fconn{position:absolute;background:var(--line);pointer-events:none}
+
 </style>
-</head><body>
-<nav class="nw"><div class="ni"><div class="nm">Jason Singh · <b>Nebius APJ</b></div><ul class="nl"><li><a href="index.html" class="on">Home</a></li><li><a href="framework.html">Framework</a></li><li><a href="strategy.html">Strategy</a></li></ul></div></nav>
-<div class="hw"><div class="hi">
-<h1>Building <em>Nebius</em> into APJ's AI cloud of choice.</h1>
-<p class="hs">A field marketing strategy for converting Nebius's momentum into market leadership across Asia Pacific.</p>
-</div></div>
-<main>
-<div class="cds">
-<a href="framework.html" class="cd"><div class="cd-n">01 — Framework</div><h3>Regional marketing framework</h3><p>Company-agnostic operating model for multi-market field marketing. Demand creation vs. capture, ICP tiering, buying committee personas, localization, and measurement.</p><span class="cd-l">View framework</span></a>
-<a href="strategy.html" class="cd"><div class="cd-n">02 — Strategy</div><h3>Nebius APAC strategy</h3><p>Do fewer things perfectly. Three big bets — podcasts and events, Nebius Masters, and a signature hospitality program — backed by a full supporting program stack.</p><span class="cd-l">View strategy</span></a>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<div class="topbar">
+  <div class="brand"><span class="dot"></span><b>APJ ’26 ·</b> Strategy Brief</div>
+  <div class="nav">
+    <a href="#atlas"><span class="num">00</span>Atlas</a>
+    <a href="#part1"><span class="num">I</span>Framework</a>
+    <a href="#part2"><span class="num">II</span>Applied</a>
+    <a href="#hbets"><span class="num">·</span>Bets</a>
+    <a href="#investment"><span class="num">·</span>Investment</a>
+  </div>
 </div>
-<div class="ab">
-<div class="ab-t"><strong>Jason Singh</strong> — 15+ years building B2B field marketing from zero across Asia Pacific. Five consecutive first marketing hire roles. Currently Head of Global Partner & Field Marketing at Meta, owning $80M+ enterprise pipeline. Singapore, Japan, Korea, India, Southeast Asia.</div>
-<div class="ab-c">
-<div class="ac"><div class="ac-l">Location</div><div class="ac-v">Singapore</div></div>
-<div class="ac"><div class="ac-l">Email</div><div class="ac-v"><a href="mailto:jasonsingh826@gmail.com">jasonsingh826@gmail.com</a></div></div>
-<div class="ac"><div class="ac-l">LinkedIn</div><div class="ac-v"><a href="https://linkedin.com/in/jasonsingh1" target="_blank">linkedin.com/in/jasonsingh1</a></div></div>
-</div></div>
-</main>
-<footer><b>Jason Singh</b> · May 2026</footer>
-</body></html>
+
+<!-- Side rail "you are here" -->
+<nav class="rail" id="rail">
+  <a href="#hero" data-target="hero"><span class="tk"></span><span class="lab">Open</span></a>
+  <a href="#atlas" data-target="atlas"><span class="tk"></span><span class="lab">Atlas</span></a>
+  <a href="#part1" data-target="part1"><span class="tk"></span><span class="lab">I · Framework</span></a>
+  <a href="#part1-framework" data-target="part1-framework"><span class="tk"></span><span class="lab">Diagram</span></a>
+  <a href="#part2" data-target="part2"><span class="tk"></span><span class="lab">II · Applied</span></a>
+  <a href="#hbets" data-target="hbets"><span class="tk"></span><span class="lab">Three Bets</span></a>
+  <a href="#investment" data-target="investment"><span class="tk"></span><span class="lab">Investment</span></a>
+</nav>
+
+<!-- ============== HERO ============== -->
+<section class="hero" id="hero" data-screen-label="01 Hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-meta">
+    <div><b>BRIEF / 01</b> &nbsp;·&nbsp; APJ MARKETING STRATEGY</div>
+    <div>MAY <b>2026</b></div>
+  </div>
+
+  <div class="hero-headline">
+    <div class="hero-eyebrow reveal">
+      <span class="dot"></span>
+      <span class="label">A 12-Month Plan · 3 Bets · 1 Region</span>
+    </div>
+    <h1 class="title reveal d1">The window<br/>is <em>right now.</em></h1>
+    <p class="hero-sub reveal d2">Nebius has the product, the NVIDIA partnership, and the momentum. APJ has the demand. <span class="ember">This document is the plan that connects the two.</span></p>
+  </div>
+
+  <div class="hero-stats">
+    <div class="col reveal"><div class="num">$2<small>B</small></div><div class="lab">NVIDIA Investment</div><div class="desc">Reference Platform Partner</div></div>
+    <div class="col reveal d1"><div class="num">32<small>%</small></div><div class="lab">APJ AI Infra CAGR</div><div class="desc">Fastest-growing region globally</div></div>
+    <div class="col reveal d2"><div class="num">60<small>+</small></div><div class="lab">Open-Source Models</div><div class="desc">Token Factory managed inference</div></div>
+    <div class="col reveal d3"><div class="num">3.5<small>×</small></div><div class="lab">Pipeline Growth QoQ</div><div class="desc">Accelerating customer demand</div></div>
+  </div>
+
+  <div class="scroll-hint"><span>Scroll</span><span class="bar"></span></div>
+</section>
+
+<!-- ============== ATLAS / READING GUIDE ============== -->
+<section class="atlas" id="atlas" data-screen-label="02 Atlas">
+  <div class="wrap">
+    <div class="atlas-top">
+      <div class="reveal">
+        <div class="eyebrow" style="margin-bottom:24px">§ 00 · The Brief</div>
+        <h2>How to read<br/>this <em>document.</em></h2>
+      </div>
+      <div class="copy reveal d1">
+        <p>This is a proposed twelve-month field marketing strategy for Nebius in Asia Pacific. It is written in <span class="ember">two parts.</span></p>
+        <p><b style="color:var(--fg)">Part I — The Framework.</b> How I run field marketing, agnostic of company, product, or region. The structure I bring into any new market.</p>
+        <p><b style="color:var(--fg)">Part II — Applied to Nebius APJ.</b> The framework above, applied. The specific bets, the program map, the customer waves, the spend.</p>
+      </div>
+    </div>
+
+    <div class="atlas-parts reveal d2">
+      <div class="atlas-part">
+        <div class="ap-head">
+          <div class="ap-num">Part I · Universal</div>
+          <h3 class="ap-title">The <em>Framework.</em></h3>
+          <p class="ap-blurb">How I run field marketing in any new market. Six sections. Company-agnostic.</p>
+        </div>
+        <ol class="ap-list">
+          <li><a href="#part1-approach"><span>01</span><b>My approach</b><i>Concentrate · embed · localize</i></a></li>
+          <li><a href="#part1-outcomes"><span>02</span><b>Two outcomes</b><i>Demand creation · demand capture</i></a></li>
+          <li><a href="#part1-philosophy"><span>03</span><b>Operating philosophy</b><i>Do fewer things perfectly</i></a></li>
+          <li><a href="#part1-framework"><span>04</span><b>The framework</b><i>2 outcomes × 2 motions × 3 bets</i></a></li>
+          <li><a href="#part1-anatomy"><span>05</span><b>Anatomy of a bet</b><i>What makes a bet a bet</i></a></li>
+          <li><a href="#part1-principles"><span>06</span><b>Operating principles</b><i>Speed · multiplier · embed · localize</i></a></li>
+        </ol>
+      </div>
+
+      <div class="atlas-part">
+        <div class="ap-head">
+          <div class="ap-num">Part II · Applied</div>
+          <h3 class="ap-title">Nebius <em>APJ.</em></h3>
+          <p class="ap-blurb">The framework, applied to the moment Nebius is in. Five sections. The next twelve months in concrete.</p>
+        </div>
+        <ol class="ap-list">
+          <li><a href="#part2-window"><span>07</span><b>The window</b><i>Why APJ, why now</i></a></li>
+          <li><a href="#hbets"><span>08</span><b>The three bets</b><i>Podcasts · Masters · Hospitality</i></a></li>
+          <li><a href="#programs"><span>09</span><b>Program map</b><i>6 bets · 13 supporting</i></a></li>
+          <li><a href="#waves"><span>10</span><b>Customer waves</b><i>IaaS · PaaS · Full stack</i></a></li>
+          <li><a href="#part2-principles"><span>11</span><b>How I'd run this</b><i>Applied principles for Nebius</i></a></li>
+          <li><a href="#investment"><span>12</span><b>Investment</b><i>$4.4M · 86% concentrated</i></a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="atlas-foot reveal d3" style="margin-top:32px">
+      <div>Prepared by <b>Jason Singh</b></div>
+      <div>For <b>Nebius APJ Leadership</b></div>
+      <div>Distribution · <b>Restricted</b></div>
+      <div>Reading time · <b>~ 12 minutes</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PART I — THE FRAMEWORK ============== -->
+<section class="chapter" id="part1" data-screen-label="03 Part I">
+  <div class="chapter-bg">
+    <div class="ring" style="width:600px;height:600px;left:-200px;top:-150px"></div>
+    <div class="ring" style="width:900px;height:900px;right:-300px;bottom:-300px"></div>
+  </div>
+  <div class="chapter-glow"></div>
+  <div class="chapter-inner wrap">
+    <div class="chapter-row">
+      <div class="reveal">
+        <div class="chapter-tag"><span class="pip"></span> Part I · Field marketing, generally</div>
+        <div class="chapter-roman">I</div>
+      </div>
+      <div class="right reveal d1">
+        <div class="chapter-title">The <em>Framework.</em></div>
+        <p class="chapter-thesis">How I run field marketing — agnostic of company, product, or region. The structure I bring into any new market. <span class="ember">Part II applies it specifically to Nebius APJ.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- § 01 My Approach -->
+<section class="section tight" id="part1-approach" data-screen-label="04 Approach">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="idx">§ 01 / My Approach</div>
+      <div>
+        <h2>Three things,<br/>repeated <em>every time.</em></h2>
+        <p class="lede">A field marketing plan lives or dies on three calls: where to concentrate the budget, how tightly marketing is bonded to sales, and how much of central's playbook is rewritten locally. I treat all three the same way every time.</p>
+      </div>
+    </div>
+    <div class="principles reveal d1" style="grid-template-columns:repeat(3,1fr)">
+      <div class="principle">
+        <div class="pn">01 · Concentrate</div>
+        <h4>Pick three. Fund them hard.</h4>
+        <p>Three signature bets that get 80%+ of the spend. Everything else still runs, but doesn't get the headcount or the executive attention. The math forces the discipline.</p>
+      </div>
+      <div class="principle">
+        <div class="pn">02 · Embed</div>
+        <h4>Marketing inside sales.</h4>
+        <p>The capture motion is co-owned with AEs and SDRs from day one. Account lists, invite lists, follow-up SLAs. Marketing as a sales function, not an adjacent department.</p>
+      </div>
+      <div class="principle">
+        <div class="pn">03 · Localize</div>
+        <h4>Adapt, don't translate.</h4>
+        <p>Central positioning gets rewritten by people on the ground. Trust signals, event formats, language register — all set locally. The framework holds; the vehicle changes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- § 02 Two Outcomes -->
+<section class="section tight" id="part1-outcomes" data-screen-label="05 Outcomes">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="idx">§ 02 / Two Outcomes</div>
+      <div>
+        <h2>Every field plan,<br/>two <em>outcomes.</em></h2>
+        <p class="lede">There are only two outcomes that matter. One builds the brand. One converts it into logos. Every program lives under one or the other — never both, never neither.</p>
+      </div>
+    </div>
+
+    <div class="goals reveal d1">
+      <div class="goal">
+        <div class="gnum">Outcome 01</div>
+        <span class="gtag">Demand Creation</span>
+        <h3>Build the <em>brand.</em></h3>
+        <p class="gbody">Make the company the name buyers reach for. Voice, advocacy, and presence at the places where buyers and analysts already are. Measured in share of voice, recall, and conversations initiated.</p>
+      </div>
+      <div class="goal">
+        <div class="gnum">Outcome 02</div>
+        <span class="gtag cap">Demand Capture</span>
+        <h3>Sign the <em>logos.</em></h3>
+        <p class="gbody">Convert brand into pipeline. Sales-embedded programs with relationship depth no webinar or banner can match. Measured in pipeline value, signed logos, and win-rate by motion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- § 03 Manifesto -->
+<section class="manifesto" id="part1-philosophy" data-screen-label="06 Philosophy">
+  <div class="floater"></div>
+  <div class="pretitle reveal">§ 03 / Operating Philosophy</div>
+  <blockquote class="reveal d1">Do fewer<br/>things <span class="ember"><em>perfectly.</em></span></blockquote>
+  <p class="below reveal d2">Most field plans entering a new market spread themselves across twenty programs. I run three, and own them. Three bets, executed with intensity, that become what the company is known for in the region. Everything else still happens — but those three I crush.</p>
+</section>
+
+<!-- § 04 Framework diagram (universal) -->
+<section class="framework" id="part1-framework">
+  <div class="wrap">
+    <div class="framework-head reveal">
+      <div class="label">§ 04 / The Framework</div>
+      <h2>One picture<br/>that holds <em>every plan.</em></h2>
+      <p class="lede">Read top-down. Two outcomes at the top — the only two that matter. Beneath each, the motion that produces it. Beneath those, the three bets where 80%+ of budget concentrates. At the base, the foundation everything else draws from.</p>
+    </div>
+
+    <div class="fdiagram reveal d1">
+      <!-- Outcomes -->
+      <div class="frow fr-goals" style="padding-top:60px">
+        <div class="layer-label" style="top:18px">Layer 01 · Outcomes · the only two that matter</div>
+        <div class="fnode goal">
+          <div class="kind">Outcome 01 · Brand</div>
+          <div class="nm">Build the <em>brand</em></div>
+          <div class="sub">Share of voice · recall · presence</div>
+        </div>
+        <div class="fnode goal">
+          <div class="kind">Outcome 02 · Logos</div>
+          <div class="nm">Sign the <em>logos</em></div>
+          <div class="sub">Pipeline · signed accounts · win-rate</div>
+        </div>
+      </div>
+
+      <!-- Motions -->
+      <div class="frow" style="padding-top:48px">
+        <div class="layer-label" style="top:14px">Layer 02 · Motions · how each outcome is produced</div>
+        <div class="fnode motion">
+          <div class="kind">Motion · Demand Creation</div>
+          <div class="nm">Make the brand visible</div>
+          <div class="sub">Voice + advocates + presence</div>
+        </div>
+        <div class="fnode motion">
+          <div class="kind">Motion · Demand Capture</div>
+          <div class="nm">Convert brand to pipeline</div>
+          <div class="sub">Relationship-led, sales-embedded</div>
+        </div>
+      </div>
+
+      <!-- Bets -->
+      <div class="frow" style="padding-top:48px">
+        <div class="layer-label" style="top:14px">Layer 03 · Three Bets · ★ where 80%+ of budget concentrates</div>
+        <div class="fnode bet b1">
+          <span class="star">★</span>
+          <div class="kind">Brand Bet · A</div>
+          <div class="nm">A <em>voice</em> bet</div>
+          <div class="sub">Owned media, PR, events — make the company impossible to ignore in the conversation</div>
+        </div>
+        <div class="fnode bet b2">
+          <span class="star">★</span>
+          <div class="kind">Brand Bet · B</div>
+          <div class="nm">An <em>advocacy</em> bet</div>
+          <div class="sub">Customer and community voices that compound credibility over quarters</div>
+        </div>
+        <div class="fnode bet b3">
+          <span class="star">★</span>
+          <div class="kind">Capture Bet</div>
+          <div class="nm">A <em>pipeline</em> bet</div>
+          <div class="sub">One relationship-led, sales-embedded motion that owns net new logos</div>
+        </div>
+      </div>
+
+      <!-- Foundation -->
+      <div class="frow" style="padding-top:48px;padding-bottom:8px">
+        <div class="layer-label" style="top:14px">Layer 04 · Foundation · supporting infrastructure (the remaining 20%)</div>
+        <div class="fnode outcome" style="grid-column:span 3"><div class="v" style="font-size:24px;color:var(--fg)">Positioning</div><div class="l">By ICP, by market</div></div>
+        <div class="fnode outcome" style="grid-column:span 3"><div class="v" style="font-size:24px;color:var(--fg)">Content</div><div class="l">Localized, by segment</div></div>
+        <div class="fnode outcome" style="grid-column:span 3"><div class="v" style="font-size:24px;color:var(--fg)">Partners</div><div class="l">Co-sell, co-market</div></div>
+        <div class="fnode outcome" style="grid-column:span 3"><div class="v" style="font-size:24px;color:var(--fg)">Attribution</div><div class="l">Martech + Salesforce</div></div>
+      </div>
+    </div>
+
+    <div class="ftakeaways reveal d2">
+      <div class="ftake"><div class="num">01</div><div class="body"><div class="h">Concentration</div><div class="d">80%+ of budget into three bets — not spread across twenty programs. The three things the company will be known for.</div></div></div>
+      <div class="ftake"><div class="num">02</div><div class="body"><div class="h">2 + 1 ratio</div><div class="d">Two brand bets to compound voice. One capture bet to convert it. Brand without capture is vanity; capture without brand is door-to-door sales.</div></div></div>
+      <div class="ftake"><div class="num">03</div><div class="body"><div class="h">Foundation is invisible</div><div class="d">Positioning, content, partners, attribution — the things that make the bets effective but don't get the budget headlines.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- § 05 Anatomy of a Bet -->
+<section class="section tight" id="part1-anatomy" data-screen-label="07 Anatomy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="idx">§ 05 / Anatomy of a Bet</div>
+      <div>
+        <h2>What makes a bet,<br/>a <em>bet.</em></h2>
+        <p class="lede">"Bet" is a strict label. It's not "a thing we're doing" or "a focus area." It's a program that meets four tests at once. Everything that doesn't meet all four lives in the foundation.</p>
+      </div>
+    </div>
+
+    <div class="principles reveal d1">
+      <div class="principle">
+        <div class="pn">Test 01</div>
+        <h4>Multi-program.</h4>
+        <p>Cuts across at least three channels at once — PR, events, content, ABM, partners. Not a single tactic. A theme that runs through multiple programs.</p>
+      </div>
+      <div class="principle">
+        <div class="pn">Test 02</div>
+        <h4>Multi-quarter.</h4>
+        <p>A 4+ quarter horizon. Compounds over time. Anything resolvable in a single quarter is a campaign, not a bet.</p>
+      </div>
+      <div class="principle">
+        <div class="pn">Test 03</div>
+        <h4>Owns one KPI.</h4>
+        <p>A single top-line metric the bet is accountable for. Pipeline. Recall. Advocates signed. Not a basket of stats — one number.</p>
+      </div>
+      <div class="principle">
+        <div class="pn">Test 04</div>
+        <h4>≥ 25% of budget.</h4>
+        <p>Each bet gets at least a quarter of the year's spend. Three bets × 25% = the 80% concentration. The number forces the discipline.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- § 06 Operating Principles -->
+<section class="section tight" id="part1-principles" data-screen-label="08 Principles">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="idx">§ 06 / Operating Principles</div>
+      <div>
+        <h2>Four ways<br/>I actually <em>run.</em></h2>
+        <p class="lede">The framework is what we do. These are how we do it — the operating principles that govern every call inside the framework.</p>
+      </div>
+    </div>
+
+    <div class="principles reveal d1">
+      <div class="principle">
+        <div class="pn">01</div>
+        <h4>Speed is strategy.</h4>
+        <p>Market windows open and close. Every conversation started inside a window carries weight that won't exist outside it. Move first; refine in motion.</p>
+      </div>
+      <div class="principle">
+        <div class="pn">02</div>
+        <h4>Find the force multiplier.</h4>
+        <p>One channel — a partner, a platform, a borrowed brand — usually returns more than the next ten combined. Find it, lean on it, scale around it.</p>
+      </div>
+      <div class="principle">
+        <div class="pn">03</div>
+        <h4>Sales-embedded.</h4>
+        <p>Every pipeline call. Co-designed campaigns. Capture programs jointly owned with AEs and SDRs. Marketing and sales as one team, not adjacent functions.</p>
+      </div>
+      <div class="principle">
+        <div class="pn">04</div>
+        <h4>Localize, don't translate.</h4>
+        <p>Central positioning gets adapted by people on the ground. Trust signals, event formats, language register — all rewritten locally. The framework holds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PART II — APPLIED ============== -->
+<section class="chapter" id="part2" data-screen-label="09 Part II">
+  <div class="chapter-bg">
+    <div class="ring" style="width:700px;height:700px;right:-220px;top:-180px"></div>
+    <div class="ring" style="width:1100px;height:1100px;left:-400px;bottom:-450px"></div>
+  </div>
+  <div class="chapter-glow"></div>
+  <div class="chapter-inner wrap">
+    <div class="chapter-row">
+      <div class="reveal">
+        <div class="chapter-tag"><span class="pip"></span> Part II · Applied</div>
+        <div class="chapter-roman">II</div>
+      </div>
+      <div class="right reveal d1">
+        <div class="chapter-title">Applied to <em>Nebius APJ.</em></div>
+        <p class="chapter-thesis">The framework above, applied to the moment Nebius is in. Three forces aligned right now — supply, demand, and momentum. <span class="ember">This is how I'd run the next twelve months.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- § 07 The window -->
+<section class="connect" id="part2-window" data-screen-label="10 The window">
+  <div class="wrap">
+    <div class="connect-row">
+      <div class="connect-cell">
+        <div class="lab">The Supply</div>
+        <div class="big">Nebius has the <em>product</em>, the partnership, the momentum.</div>
+      </div>
+      <div class="connect-link" aria-hidden="true">
+        <svg width="60" height="20" viewBox="0 0 60 20" fill="none"><line x1="0" y1="10" x2="50" y2="10" stroke="#b95628" stroke-width="1"/><path d="M44 4 L52 10 L44 16" stroke="#b95628" stroke-width="1" fill="none"/></svg>
+      </div>
+      <div class="connect-cell" style="text-align:right">
+        <div class="lab" style="text-align:right">The Demand</div>
+        <div class="big">APJ has the buyers, the budget, the <em>urgency</em>.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- § 08 The Three Bets · section head -->
+<section class="section tight">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="idx">§ 08 / The Three Bets · for Nebius APJ</div>
+      <div>
+        <h2>Two to <em>build the brand.</em><br/>One to <em>close the deal.</em></h2>
+        <p class="lede">The framework concentrates on three signature bets. Here's how I'd shape each one for Nebius APJ. Scroll right to pan through all three before deciding whether the selection is correct.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Horizontal-scroll bets -->
+<section class="hbets" id="hbets" aria-label="The three bets, horizontal scroll">
+  <div class="hbets-pin">
+    <div class="hbets-bar">
+      <div class="left"><span class="pip"></span> <b>The Three Bets</b> · scroll to pan</div>
+      <div class="pgr">
+        <span id="hbets-cur">01</span><span style="opacity:.4"> / 03</span>
+        <span class="tk"><i id="hbets-fill"></i></span>
+      </div>
+    </div>
+
+    <div class="hbets-track-wrap">
+      <div class="hbets-track" id="hbets-track">
+
+        <!-- Intro panel -->
+        <div class="hbets-panel intro">
+          <div class="eyebrow" style="margin-bottom:24px">§ 08 · The Three Bets</div>
+          <h2>Two to <em>build the brand.</em><br/>One to <em>close the deal.</em></h2>
+          <p>We're picking a small number of fights and winning them decisively. The bets get the budget, the headcount, and the executive attention. Everything else is supporting infrastructure.</p>
+        </div>
+
+        <!-- Bet 01 -->
+        <div class="hbets-panel">
+          <div class="panel-head">
+            <div class="l">
+              <div class="bignum">01</div>
+              <div class="hd">
+                <div class="kk">Bet 01 · Voice</div>
+                <div class="nm">Podcasts, PR &amp; <em>industry events</em></div>
+              </div>
+            </div>
+            <div class="motion"><span class="pip"></span> Demand Creation</div>
+          </div>
+          <div class="panel-body">
+            <div class="pb-l">
+              <p class="why">Be everywhere the APJ AI conversation is happening. Not with a booth and a banner — with a <span class="ember">voice, a point of view, and a consistent presence</span> that makes Nebius the most visible neocloud in the region.</p>
+              <div class="kpis">
+                <div class="kpi"><div class="v">50+</div><div class="l">Events &amp; podcasts</div></div>
+                <div class="kpi"><div class="v">#1</div><div class="l">Neocloud share of voice</div></div>
+                <div class="kpi"><div class="v">$1.3M</div><div class="l">Year-1 budget</div></div>
+              </div>
+            </div>
+            <div class="pb-r">
+              <div class="tactic">
+                <div class="tlab">Podcast tour</div>
+                <ul>
+                  <li>Nebius execs on every relevant APJ tech and AI podcast — Tech in Asia, The Ken, JP / KR / IN shows</li>
+                  <li>5+ spokesperson roster, on rotation</li>
+                </ul>
+              </div>
+              <div class="tactic">
+                <div class="tlab">Earned media &amp; PR</div>
+                <ul>
+                  <li>Bylined articles in regional and global press</li>
+                  <li>Gartner / IDC / Forrester analyst briefings</li>
+                  <li>Lead the conversation on purpose-built AI infrastructure in APJ</li>
+                </ul>
+              </div>
+              <div class="tactic">
+                <div class="tlab">Industry events</div>
+                <ul>
+                  <li>Tier-1 sponsorship: GITEX Asia, GTC APJ, Japan IT Week, SG FinTech Fest</li>
+                  <li>Speaking at every CFP</li>
+                  <li>NVIDIA co-presence at every NVIDIA APJ event</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bet 02 -->
+        <div class="hbets-panel">
+          <div class="panel-head">
+            <div class="l">
+              <div class="bignum">02</div>
+              <div class="hd">
+                <div class="kk">Bet 02 · Advocacy</div>
+                <div class="nm">Nebius <em>Masters</em></div>
+              </div>
+            </div>
+            <div class="motion"><span class="pip"></span> Demand Creation</div>
+          </div>
+          <div class="panel-body">
+            <div class="pb-l">
+              <p class="why">Turn power users and customers into advocates. The most credible voice for Nebius in APJ isn't a Nebius employee — <span class="ember">it's an ML engineer at a Singapore fintech</span> who built their inference stack on Token Factory and will tell you why.</p>
+              <div class="kpis">
+                <div class="kpi"><div class="v">20+</div><div class="l">Active advocates</div></div>
+                <div class="kpi"><div class="v">8+</div><div class="l">APJ case studies / yr</div></div>
+                <div class="kpi"><div class="v">$0.9M</div><div class="l">Year-1 budget</div></div>
+              </div>
+            </div>
+            <div class="pb-r">
+              <div class="tactic">
+                <div class="tlab">Customer advocates</div>
+                <ul>
+                  <li>Recruit top customers and power users</li>
+                  <li>Stage time, co-authored content, feature case studies</li>
+                  <li>Direct line to product team</li>
+                </ul>
+              </div>
+              <div class="tactic">
+                <div class="tlab">Developer champions</div>
+                <ul>
+                  <li>10 regional ambassadors</li>
+                  <li>Technical content in EN, JP, KR</li>
+                  <li>Community meetups &amp; hackathons</li>
+                </ul>
+              </div>
+              <div class="tactic">
+                <div class="tlab">Content engine</div>
+                <ul>
+                  <li>Co-created case studies, technical blogs</li>
+                  <li>Video testimonials, benchmark comparisons</li>
+                  <li>Early feature access, "Masters" recognition</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bet 03 -->
+        <div class="hbets-panel">
+          <div class="panel-head">
+            <div class="l">
+              <div class="bignum">03</div>
+              <div class="hd">
+                <div class="kk">Bet 03 · Pipeline</div>
+                <div class="nm">The Nebius <em>Hospitality</em> program</div>
+              </div>
+            </div>
+            <div class="motion cap"><span class="pip"></span> Demand Capture</div>
+          </div>
+          <div class="panel-body">
+            <div class="pb-l">
+              <p class="why">One integrated program that wraps executive roundtables, premium sporting hospitality, and hands-on workshops into <span class="ember">themed experiences — by vertical, use case, and segment.</span> Jointly activated with sales and SDRs as an outbound ABM motion.</p>
+
+              <div class="hbets-arc" aria-label="Hospitality arc" style="margin-top:8px">
+                <div class="stp"><div class="n">Phase 01</div><div class="t">Roundtable</div><div class="d">8–12 CTO/CIOs</div></div>
+                <div class="stp"><div class="n">Phase 02</div><div class="t">Sporting</div><div class="d">F1 · golf · pickleball</div></div>
+                <div class="stp"><div class="n">Phase 03</div><div class="t">Workshop</div><div class="d">Token Factory deep-dive</div></div>
+              </div>
+
+              <div class="kpis">
+                <div class="kpi"><div class="v">$50M+</div><div class="l">Pipeline / 18 mo</div></div>
+                <div class="kpi"><div class="v">30+</div><div class="l">Net new logos</div></div>
+                <div class="kpi"><div class="v">$1.6M</div><div class="l">Year-1 budget</div></div>
+              </div>
+            </div>
+            <div class="pb-r">
+              <div class="tactic">
+                <div class="tlab">Themed by vertical</div>
+                <ul>
+                  <li>"Sovereign AI for ASEAN fintech" → roundtable → Singapore GP → inference workshop</li>
+                  <li>One arc per use case × segment × vertical</li>
+                </ul>
+              </div>
+              <div class="tactic">
+                <div class="tlab">Market formats</div>
+                <ul>
+                  <li>SG · F1, golf, private dining</li>
+                  <li>JP · onsen, whisky</li>
+                  <li>KR · cultural experiences</li>
+                  <li>IN · cricket hospitality</li>
+                </ul>
+              </div>
+              <div class="tactic">
+                <div class="tlab">Sales-aligned</div>
+                <ul>
+                  <li>SDR outbound activates the invite</li>
+                  <li>AE owns the relationship arc</li>
+                  <li>Weekly account reviews</li>
+                </ul>
+              </div>
+              <div class="tactic">
+                <div class="tlab">ABM integration</div>
+                <ul>
+                  <li>30 Tier 1, 150 Tier 2 named accounts</li>
+                  <li>Each arc is a multi-touch campaign</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Program map -->
+<section class="section tight" id="programs" data-screen-label="11 Programs">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="idx">§ 09 / Program Map</div>
+      <div>
+        <h2>The bets get the <em>budget.</em></h2>
+        <p class="lede">Everything below still runs — but the bets get the budget, the headcount, and the executive attention. Supporting programs are foundation, not focus.</p>
+      </div>
+    </div>
+
+    <div class="ptable reveal d1">
+      <div class="ph"><div>Program</div><div>Motion</div><div>Goal</div><div>Status</div></div>
+
+      <div class="pr big"><div class="name">Podcast tour &amp; earned media</div><div>Demand creation</div><div>Goal 1</div><div class="status">★ Big bet</div></div>
+      <div class="pr big"><div class="name">Tier-1 event sponsorship &amp; speaking</div><div>Demand creation</div><div>Goal 1 + 2</div><div class="status">★ Big bet</div></div>
+      <div class="pr big"><div class="name">Nebius Masters — customer advocates</div><div>Demand creation</div><div>Goal 1</div><div class="status">★ Big bet</div></div>
+      <div class="pr big"><div class="name">Nebius Masters — developer champions</div><div>Demand creation</div><div>Goal 1</div><div class="status">★ Big bet</div></div>
+      <div class="pr big"><div class="name">Hospitality program (roundtable → sporting → workshop)</div><div>Creation + capture</div><div>Goal 2</div><div class="status">★ Big bet</div></div>
+      <div class="pr big"><div class="name">Outbound ABM (integrated into hospitality)</div><div>Demand capture</div><div>Goal 2</div><div class="status">★ Big bet</div></div>
+
+      <div class="pr section-row"><div>Supporting Programs</div></div>
+
+      <div class="pr"><div class="name">Localized positioning &amp; messaging by ICP</div><div>Foundation</div><div>Goal 1 + 2</div><div class="status">Supporting</div></div>
+      <div class="pr"><div class="name">Growth story &amp; sales proof deck</div><div>Foundation</div><div>Goal 1 + 2</div><div class="status">Supporting</div></div>
+      <div class="pr"><div class="name">Whitepapers &amp; talk track library</div><div>Demand creation</div><div>Goal 1</div><div class="status">Supporting</div></div>
+      <div class="pr"><div class="name">Analyst partnerships (Gartner, IDC, Forrester APJ)</div><div>Demand creation</div><div>Goal 1</div><div class="status">Supporting</div></div>
+      <div class="pr"><div class="name">Industry body partnerships (AISG, JDLA, nasscom, KAIA)</div><div>Demand creation</div><div>Goal 1</div><div class="status">Supporting</div></div>
+      <div class="pr"><div class="name">Government &amp; sovereign AI engagement</div><div>Demand creation</div><div>Goal 1</div><div class="status">Supporting</div></div>
+      <div class="pr"><div class="name">NVIDIA co-marketing &amp; co-sell</div><div>Creation + capture</div><div>Goal 1 + 2</div><div class="status">Supporting</div></div>
+      <div class="pr"><div class="name">SI partner enablement (Accenture, NTT Data, Infosys)</div><div>Demand capture</div><div>Goal 2</div><div class="status">Supporting</div></div>
+      <div class="pr"><div class="name">ISV co-marketing (DataRobot, Hugging Face, Anyscale)</div><div>Creation + capture</div><div>Goal 1 + 2</div><div class="status">Supporting</div></div>
+      <div class="pr"><div class="name">Digital campaigns (LinkedIn, SEM, dev platforms)</div><div>Demand capture</div><div>Goal 2</div><div class="status">Supporting</div></div>
+      <div class="pr"><div class="name">Content localization (JP, KR) &amp; sales enablement</div><div>Foundation</div><div>Goal 1 + 2</div><div class="status">Supporting</div></div>
+      <div class="pr"><div class="name">Martech &amp; Salesforce attribution setup</div><div>Foundation</div><div>Goal 1 + 2</div><div class="status">Supporting</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Customer waves -->
+<section class="section" id="waves" data-screen-label="12 Waves">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="idx">§ 10 / Customer Waves</div>
+      <div>
+        <h2>Three waves.<br/>Wave Two is <em>where the growth is.</em></h2>
+        <p class="lede">Nebius serves three waves of customers in APJ. The middle wave — vertical AI and enterprise buying a managed platform, not bare-metal GPUs — is the engine.</p>
+      </div>
+    </div>
+
+    <div class="waves reveal d1">
+      <div class="wave">
+        <div class="wlab">Wave 01 · IaaS</div>
+        <h3>Building AI Models</h3>
+        <div class="product">Product · AI Cloud</div>
+        <p class="blurb">Raw GPU compute for training and fine-tuning. Bare metal, latest NVIDIA, lowest cost per FLOP.</p>
+        <div class="targets-lab">Target accounts</div>
+        <div class="targets">
+          <span class="chip">Preferred Networks</span><span class="chip">Sony AI</span><span class="chip">Samsung AI</span><span class="chip">Naver</span><span class="chip">Sarvam AI</span>
+        </div>
+        <div class="cycle">Cycle · <b>POC-driven, weeks–months</b></div>
+      </div>
+
+      <div class="wave emphasized">
+        <div class="wlab">Wave 02 · PaaS</div>
+        <div class="wgrowth">★ Where the growth is</div>
+        <h3>Vertical AI &amp; Enterprise</h3>
+        <div class="product">Product · Token Factory</div>
+        <p class="blurb">Managed inference platform. Buying endpoints, APIs, SLAs — not GPUs. This is where APJ growth comes from.</p>
+        <div class="targets-lab">Target accounts</div>
+        <div class="targets">
+          <span class="chip">DBS</span><span class="chip">Shopee</span><span class="chip">Coupang</span><span class="chip">Bandai Namco</span><span class="chip">Singtel</span><span class="chip">Paytm</span>
+        </div>
+        <div class="cycle">Cycle · <b>Self-serve trial → enterprise contract</b></div>
+      </div>
+
+      <div class="wave">
+        <div class="wlab">Wave 03 · Full Stack</div>
+        <h3>Enterprise AI Builders</h3>
+        <div class="product">Product · AI Cloud + Token Factory</div>
+        <p class="blurb">Fine-tuning on proprietary data, governed deployment, full platform flexibility. Highest-value customer.</p>
+        <div class="targets-lab">Target accounts</div>
+        <div class="targets">
+          <span class="chip">Toyota</span><span class="chip">AIA</span><span class="chip">GovTech SG</span><span class="chip">Accenture APJ</span><span class="chip">NTT Data</span>
+        </div>
+        <div class="cycle">Cycle · <b>Months–quarters, SI-influenced</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- § 11 Applied principles for Nebius -->
+<section class="section tight" id="part2-principles" data-screen-label="13 Applied">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="idx">§ 11 / How I'd Run This</div>
+      <div>
+        <h2>The framework's <em>principles,</em><br/>applied to Nebius.</h2>
+        <p class="lede">The four universal principles from Part I, rendered concrete for Nebius APJ. Each one names the specific move I'd make.</p>
+      </div>
+    </div>
+
+    <div class="principles reveal d1">
+      <div class="principle">
+        <div class="pn">Speed</div>
+        <h4>Ride the momentum.</h4>
+        <p>Nebius is trending — in media, analyst coverage, customer conversations. Every conversation started this year carries weight that won't exist once the market normalizes. <strong style="color:var(--fg)">Move now.</strong></p>
+      </div>
+      <div class="principle">
+        <div class="pn">Multiplier</div>
+        <h4>NVIDIA is the channel.</h4>
+        <p>$2B investment plus Reference Platform status. Co-present at every event, co-sell into their base. Primary credibility channel — borrow it shamelessly.</p>
+      </div>
+      <div class="principle">
+        <div class="pn">Embed</div>
+        <h4>Hospitality is jointly owned.</h4>
+        <p>Every pipeline call. Co-designed campaigns. The hospitality program is jointly owned with AEs and SDRs from invite list to follow-up SLA. Not a marketing program with sales attendance.</p>
+      </div>
+      <div class="principle">
+        <div class="pn">Localize</div>
+        <h4>Build where central can't.</h4>
+        <p>Adapt central positioning for local markets. Build from scratch where central can't reach: sovereign AI for ASEAN, Japan trust-building, India pricing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== INVESTMENT ============== -->
+
+<section class="section" id="investment" data-screen-label="14 Investment">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="idx">§ 12 / Investment · Year One</div>
+      <div>
+        <h2>Concentrated on the <em>three bets.</em></h2>
+      </div>
+    </div>
+
+    <div class="invest-top reveal d1">
+      <div class="pct">86<sup>%</sup></div>
+      <div class="pcopy">
+        <b>$3.8M of $4.4M goes directly to the three signature programs.</b> The remaining $600K covers the positioning, content, and operational foundation that makes them effective. Not a budget spread across 20 line items — a concentrated investment in three things we will be known for.
+      </div>
+    </div>
+
+    <div class="alloc reveal d2">
+      <div class="alloc-bar" aria-label="Year 1 allocation">
+        <div class="seg b1"><div><span class="l">Bet 01 · Voice</span><span class="v">$1.30M</span></div></div>
+        <div class="seg b2"><div><span class="l">Bet 02 · Masters</span><span class="v">$0.90M</span></div></div>
+        <div class="seg b3"><div><span class="l">Bet 03 · Hospitality</span><span class="v">$1.60M</span></div></div>
+        <div class="seg sup"><div><span class="l">Supporting</span><span class="v">$0.60M</span></div></div>
+      </div>
+
+      <div class="alloc-table">
+        <div class="alloc-row"><div class="swatch"><span style="background:oklch(72% 0.17 60)"></span></div><div class="name">Bet 01 · Podcasts, PR &amp; events</div><div class="amt">$1,300,000</div><div>Demand creation — be everywhere.</div></div>
+        <div class="alloc-row"><div class="swatch"><span style="background:oklch(60% 0.19 48)"></span></div><div class="name">Bet 02 · Nebius Masters</div><div class="amt">$900,000</div><div>Demand creation — authentic voices.</div></div>
+        <div class="alloc-row"><div class="swatch"><span style="background:oklch(46% 0.16 38)"></span></div><div class="name">Bet 03 · Hospitality program</div><div class="amt">$1,600,000</div><div>Demand capture — the pipeline engine.</div></div>
+        <div class="alloc-row"><div class="swatch"><span style="background:var(--bg-2)"></span></div><div class="name" style="color:var(--fg-2);font-family:var(--serif)">Supporting programs</div><div class="amt" style="color:var(--fg-2)">$600,000</div><div>Foundation for the three bets.</div></div>
+        <div class="alloc-row total"><div class="swatch"></div><div class="name">Total · Year One</div><div class="amt">$4,400,000</div><div>$50M+ pipeline · 30+ logos · three programs, executed perfectly.</div></div>
+      </div>
+
+      <div class="invest-kpis">
+        <div class="ik"><div class="iv">$50M<em>+</em></div><div class="il">Pipeline target / 18 mo</div></div>
+        <div class="ik"><div class="iv">30<em>+</em></div><div class="il">Net new signed logos</div></div>
+        <div class="ik"><div class="iv">Top <em>3</em></div><div class="il">Brand recall · SG / JP / KR</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="foot" data-screen-label="15 Signoff">
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="reveal">
+        <div class="eyebrow" style="margin-bottom:24px">End of Brief</div>
+        <div class="foot-title">The window is right now.<br/><em>Let's not miss it.</em></div>
+      </div>
+      <div class="foot-meta reveal d1">
+        <div><b>JASON SINGH</b></div>
+        <div>Proposed APJ Marketing Strategy</div>
+        <div>May 2026</div>
+        <div style="margin-top:16px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c7ada6b4a8a9b4aea9a0affff5f187a0aaa6aeabe9a4a8aa">[email&#160;protected]</a></div>
+        <div>linkedin.com/in/jasonsingh1</div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>Brief 01 · APJ ’26</div>
+      <div>2 Parts · 11 Sections · $4.4M · 12 Months</div>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // If the page loads while the tab is hidden (e.g. screenshot capture), transitions
+  // are paused and reveal elements stay at opacity 0. Detect that and skip the fade.
+  if (document.hidden) document.documentElement.classList.add('no-reveal');
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) document.documentElement.classList.remove('no-reveal');
+  });
+
+  // Scroll progress
+  const prog = document.getElementById('progress');
+  function updateProgress(){
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    const pct = Math.max(0, Math.min(1, h.scrollTop / max));
+    prog.style.width = (pct*100) + '%';
+  }
+  document.addEventListener('scroll', updateProgress, {passive:true});
+  updateProgress();
+
+  // Reveal on intersection
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Hero glow mouse parallax
+  const glow = document.querySelector('.hero-glow');
+  document.addEventListener('mousemove', (e) => {
+    if (window.scrollY > 200) return;
+    const x = (e.clientX / window.innerWidth - 0.5) * 30;
+    const y = (e.clientY / window.innerHeight - 0.5) * 30;
+    if (glow) glow.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+  });
+
+  // Chapter glows track mouse
+  document.querySelectorAll('.chapter').forEach(ch => {
+    const g = ch.querySelector('.chapter-glow');
+    ch.addEventListener('mousemove', (e) => {
+      const r = ch.getBoundingClientRect();
+      const x = ((e.clientX - r.left) / r.width - 0.5) * 80;
+      const y = ((e.clientY - r.top) / r.height - 0.5) * 80;
+      if (g) g.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+    });
+  });
+
+  // Smooth nav
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) { e.preventDefault(); window.scrollTo({ top: el.offsetTop - 20, behavior: 'smooth' }); }
+    });
+  });
+
+  // Horizontal bets — sticky pan
+  (function(){
+    const section = document.getElementById('hbets');
+    const track = document.getElementById('hbets-track');
+    const fill = document.getElementById('hbets-fill');
+    const cur = document.getElementById('hbets-cur');
+    if (!section || !track) return;
+    const panels = track.querySelectorAll('.hbets-panel');
+
+    function update(){
+      const rect = section.getBoundingClientRect();
+      const total = section.offsetHeight - window.innerHeight;
+      let p = Math.min(1, Math.max(0, -rect.top / total));
+      const trackWidth = track.scrollWidth;
+      const maxX = trackWidth - window.innerWidth;
+      track.style.transform = `translateX(${-(p * maxX)}px)`;
+
+      // figure out which "bet" panel we're on (skip intro)
+      const xNow = p * maxX;
+      let acc = 0; let idx = 0;
+      for (let i=0;i<panels.length;i++){
+        const w = panels[i].offsetWidth;
+        if (xNow < acc + w*0.5) { idx = i; break; }
+        acc += w; idx = i;
+      }
+      // panels[0] is intro; convert to 01/02/03 of the three bets
+      const betIdx = Math.max(0, idx - 0); // intro = 0; then 1,2,3
+      const display = idx <= 0 ? '00' : String(idx).padStart(2,'0');
+      cur.textContent = display === '00' ? '—' : display;
+      // progress bar fill (only across the three bet panels)
+      const introW = panels[0].offsetWidth;
+      const after = Math.max(0, xNow - introW);
+      const totalAfter = trackWidth - introW - window.innerWidth + introW;
+      const pp = totalAfter > 0 ? Math.min(1, after / (trackWidth - introW)) : 0;
+      fill.style.width = (pp*100) + '%';
+    }
+    document.addEventListener('scroll', update, {passive:true});
+    window.addEventListener('resize', update);
+    update();
+  })();
+
+  // Top nav + rail active state
+  (function(){
+    const sections = [
+      ['hero','hero'],['atlas','atlas'],['part1','part1'],['part1-framework','part1-framework'],['part2','part2'],['hbets','hbets'],['investment','investment']
+    ];
+    const navLinks = document.querySelectorAll('.topbar .nav a');
+    const railLinks = document.querySelectorAll('.rail a');
+    function setActive(id){
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#'+id));
+      railLinks.forEach(a => a.classList.toggle('active', a.dataset.target === id));
+    }
+    const elById = id => document.getElementById(id);
+    function track(){
+      // active = section whose top is closest above 40% of viewport
+      let cur = sections[0][0];
+      const y = window.scrollY + window.innerHeight * 0.4;
+      for (const [k] of sections){
+        const el = elById(k); if (!el) continue;
+        if (el.offsetTop <= y) cur = k;
+      }
+      setActive(cur);
+    }
+    document.addEventListener('scroll', track, {passive:true});
+    track();
+  })();
+</script>
+
+</body>
+</html>
